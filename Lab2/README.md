@@ -14,7 +14,7 @@ Trong bài lab này có các thuật toán chính như: Image inverse transforma
 ### 1. Image inverse transformation (Biến đổi cường độ ảnh)
    
 Là biến đổi cường độ ảnh từ tối sang sáng và ngược lại.  
-Công thức: s = L - 1 - r (s: giá trị pixel sau biến đổi, r: giá trị pixel trước biến đổi, L: giá trị pixel lớn nhất). 
+Công thức chính là im_2 = 255 - im_1. 
   
 ![image](https://github.com/user-attachments/assets/5e53daab-6b45-4375-9f08-d0035709af36)  
 Đầu tiên mở ảnh mức xám bird.png, chuyển ảnh sang ndarray để thao tác pixel (im_1 = np.asarray(img)), sau đó biến đổi ảnh tại dòng im_2 = 255 - im_1.  
@@ -22,8 +22,10 @@ Công thức: s = L - 1 - r (s: giá trị pixel sau biến đổi, r: giá tr�
 ### 2. Power law (Thay đổi chất lượng ảnh)
 
 Là dùng để tăng chất lượng của một bức ảnh.  
-Trong bài này, với gamma = 0.5 thì sẽ làm ảnh sáng hơn.  
+Trong bài này, với gamma = 0.5 thì sẽ làm ảnh sáng hơn với công thức chính là b2 = np.log (b3) * gamma và c= np.exp (b2) * 255.0. 
 ![image](https://github.com/user-attachments/assets/d839ccf8-96aa-4f5c-8659-cfed5bd5c609)  
+
+
 
  
 
