@@ -18,6 +18,10 @@ Ví dụ: ảnh gốc ban đầu có pixel lần lượt là [0 , 127, 255] (đe
 ![image](https://github.com/user-attachments/assets/5e53daab-6b45-4375-9f08-d0035709af36)  
 Đầu tiên mở ảnh mức xám bird.png, chuyển ảnh sang ndarray để thao tác pixel (im_1 = np.asarray(img)), sau đó biến đổi ảnh tại dòng im_2 = 255 - im_1.  
 
+2. Power law (Thay đổi chất lượng ảnh)
+Là dùng để tăng chất lượng của một bức ảnh.
+
+
 
 
 
