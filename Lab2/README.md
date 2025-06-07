@@ -57,7 +57,15 @@ Trong bài này, công thức chính là c = abs (scipy.fftpack.fft2 (im1))
 Thực hiện biến đổi Fourier trên ảnh im1 bằng thư viện scipy.fftpack, abs sẽ lấy biên độ của kết quả biến đổi Fourier (c = abs (scipy.fftpack.fft2 (im1))). Sau đó fftshift giúp đưa tần số thấp vào giữa khung hình, tần số cao ra rìa giúp thuận tiện quan sát (d= scipy.fftpack.fftshift (c)).  
 #### 6.2 Lọc ảnh trong miền tần suất  
 Có 2 dạng là Lowpass và Highpass  
-##### Butterworth Lowpass Filter
+##### Butterworth Lowpass Filter  
+Sử dụng những điểm ảnh có tần suất thấp từ biến đổi Fourier, lowpass dùng để làm mịn và khử nhiễu ảnh. 
+Trong bài này, lowpass dùng để giảm nhiễu, làm mượt và làm mờ các chi tiết sắc nhỏ  
+![image](https://github.com/user-attachments/assets/b34b71cd-b686-48d4-83b5-481b9c4eea3d)  
+Đoạn code trên là nơi giữ lại tần số thấp, giảm biên độ tần số cao. Sau giai đoạn lọc thì biến ảnh từ miền tần số về miền không gian (e = abs (scipy.fftpack.ifft2 (con)))
+
+
+
+
 
 
 
