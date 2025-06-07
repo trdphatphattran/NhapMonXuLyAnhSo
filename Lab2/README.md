@@ -7,6 +7,14 @@
 - Xử lý điểm ảnh sử dụng kĩ thuật histogram equalization
 - Xử lý điểm ảnh sử dụng kĩ thuật contrasting stretching
 
+## Thuật toán sử dụng:  
+Trong bài lab này có các thuật toán chính như: Image inverse transformation, Power law, Log transformation, Histogram equalization, Contrast stretching.  
+
+## Cách hoạt động:  
+
+
+
+
 
   
  
