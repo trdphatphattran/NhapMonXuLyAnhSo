@@ -42,6 +42,15 @@ cdf_m là hàm phân phối tích lũy (CDF) đã loại bỏ giá trị 0.
 ![image](https://github.com/user-attachments/assets/d0ebfaac-a911-43e4-901e-8b89f169fe0f)  
 Trước tiên chuyển mảng 2 chiều thành 1 chiều chứa toàn bộ pixel của ảnh (b1 = im1.flatten()), sau đó tính histogram và biên của các mức xám (histogram chứa số pixel ứng với các mức xám từ 0 -> 255) (hist, bins = np.histogram(im1, 256, [0, 255])), tính hàm phân phối tích lũy và loại bỏ giá trị 0 (cdf = hist.cumsum() và cdf_m = np.ma.masked_equal (cdf, 0)). Tiếp theo chuẩn hóa ảnh về 0 -> 255 (num_cdf_m giúp trải đều mức xám của ảnh, den_cdf_m giúp trải đều giá trị của ảnh từ 0 -> 255). Sau chuẩn hóa, thay giá trị mask = 0 và chuyển sang kiểu số nguyên (cdf = np.ma.filled (cdf_m, 0).astype('uint8')), tương tự biến đổi cdf lên mảng 1 chiều và đưa mảng trở về 2 chiều ((im2 = cdf[b1] và im3 = np.reshape (im2, im1.shape)).  
 
+### 5. Contrast stretching  
+Là mở rộng giá trị pixel của ảnh sao cho độ tương phản của ảnh được cải thiện.  
+Trong bài này, công thức chính là im2 = 255* (c - a)/(b - a)  
+![image](https://github.com/user-attachments/assets/0a8d38fd-4d75-4498-8754-a48b786777ef)  
+Trước tiên lấy pixel lớn nhất b và nhỏ nhất a (255 và 0), biến đổi pixel sang kiểu float để thực hiện toán chia (C = im1.astype (float)) và thực hiện theo công thức 255* (c - a)/(b - a) để cải thiện ảnh.  
+
+
+
+
 
 
 
