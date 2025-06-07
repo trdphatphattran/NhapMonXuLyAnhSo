@@ -23,6 +23,7 @@ Công thức chính là im_2 = 255 - im_1.
 
 Là dùng để tăng chất lượng của một bức ảnh.  
 Trong bài này, với gamma = 0.5 thì sẽ làm ảnh sáng hơn với công thức chính là b2 = np.log (b3) * gamma và c= np.exp (b2) * 255.0. 
+
 ![image](https://github.com/user-attachments/assets/d839ccf8-96aa-4f5c-8659-cfed5bd5c609)  
 
 
