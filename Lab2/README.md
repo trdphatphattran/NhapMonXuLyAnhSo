@@ -38,6 +38,8 @@ Trước tiên chuyển ảnh sang kiếu float để thực hiện tính toán 
 Là biểu đồ tần suất thống kê số lần xuất hiện các mức sáng trong ảnh, mục đích là cải tiến độ tương phản hai vùng sáng tối của ảnh.  
 Trong bài này, công thức chính là  
 ![image](https://github.com/user-attachments/assets/de9d2792-3cbd-4c1b-a869-8ef5644b06ce)  
+cdf_m là là hàm phân phối tích lũy (CDF) đã loại bỏ giá trị 0.  
+
 
 
 
