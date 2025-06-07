@@ -22,7 +22,9 @@ Là biến đổi cường độ ảnh từ tối sang sáng và ngược lại.
 
 Là dùng để tăng chất lượng của một bức ảnh.  
 Trong bài này, với gamma = 0.5 thì sẽ làm ảnh sáng hơn.  
-![image](https://github.com/user-attachments/assets/846a6920-9f07-407f-aad8-9722ccc3ec96)  
+![image](https://github.com/user-attachments/assets/d839ccf8-96aa-4f5c-8659-cfed5bd5c609)  
+
+ 
 
 
 
