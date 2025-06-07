@@ -25,6 +25,8 @@ Là dùng để tăng chất lượng của một bức ảnh.
 Trong bài này, với gamma = 0.5 thì sẽ làm ảnh sáng hơn với công thức chính là b2 = np.log (b3) * gamma và c= np.exp (b2) * 255.0. 
 
 ![image](https://github.com/user-attachments/assets/d839ccf8-96aa-4f5c-8659-cfed5bd5c609)  
+Trước tiên khởi tạo gamma = 0.5, sau đó chuyển ảnh từ kiểu int sang float để thực hiện tính toán số mũ (b1 = im_1.astype (float)). Tiếp theo tìm giá trị lớn nhất của b1 (b2 = np.max (b1)) để chuẩn hóa ảnh, sau đó chuẩn hóa pixel về khoảng [0, 1] (b3 = b1/b2). Tính pixel bằng cách lấy gamma * log(pixel) (b2 = np.log (b3) * gamma). Cuối cùng khi ra kết quả trên, lấy hàm mũ và nhân tiếp với 255 (c= np.exp (b2) * 255.0).  
+
 
 
 
