@@ -55,6 +55,9 @@ Là biến đổi ảnh từ miền không gian sang miền tần số.
 Trong bài này, công thức chính là c = abs (scipy.fftpack.fft2 (im1))  
 ![image](https://github.com/user-attachments/assets/faede7ae-fc09-48d2-bd2d-1129f69c7c6a)  
 Thực hiện biến đổi Fourier trên ảnh im1 bằng thư viện scipy.fftpack, abs sẽ lấy biên độ của kết quả biến đổi Fourier (c = abs (scipy.fftpack.fft2 (im1))). Sau đó fftshift giúp đưa tần số thấp vào giữa khung hình, tần số cao ra rìa giúp thuận tiện quan sát (d= scipy.fftpack.fftshift (c)).  
+#### 6.2 Lọc ảnh trong miền tần suất  
+Có 2 dạng là Lowpass và Highpass  
+##### Butterworth Lowpass Filter
 
 
 
