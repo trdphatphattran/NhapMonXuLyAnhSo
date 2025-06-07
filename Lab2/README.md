@@ -14,7 +14,7 @@ Trong bài lab này có các thuật toán chính như: Image inverse transforma
 ### 1. Image inverse transformation (Biến đổi cường độ ảnh)
    
 Là biến đổi cường độ ảnh từ tối sang sáng và ngược lại.  
-Công thức: s = L - 1 - r. 
+Công thức: s = L - 1 - r (s: giá trị pixel sau biến đổi, r: giá trị pixel trước biến đổi, L: giá trị pixel lớn nhất). 
   
 ![image](https://github.com/user-attachments/assets/5e53daab-6b45-4375-9f08-d0035709af36)  
 Đầu tiên mở ảnh mức xám bird.png, chuyển ảnh sang ndarray để thao tác pixel (im_1 = np.asarray(img)), sau đó biến đổi ảnh tại dòng im_2 = 255 - im_1.  
