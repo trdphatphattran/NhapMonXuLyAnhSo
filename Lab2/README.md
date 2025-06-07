@@ -40,7 +40,7 @@ Trong bài này, công thức chính là
 ![image](https://github.com/user-attachments/assets/de9d2792-3cbd-4c1b-a869-8ef5644b06ce)  
 cdf_m là hàm phân phối tích lũy (CDF) đã loại bỏ giá trị 0.  
 ![image](https://github.com/user-attachments/assets/d0ebfaac-a911-43e4-901e-8b89f169fe0f)  
-Trước tiên chuyển mảng 2 chiều thành 1 chiều chứa toàn bộ pixel của ảnh (b1 = im1.flatten()), sau đó tính histogram và biên của các mức xám (histogram chứa số pixel ứng với các mức xám từ 0 -> 255) (hist, bins = np.histogram(im1, 256, [0, 255])), tính hàm phân phối tích lũy và loại bỏ giá trị 0 (cdf = hist.cumsum() và cdf_m = np.ma.masked_equal (cdf, 0)). Tiếp theo chuẩn hóa ảnh về 0 -> 255 (num_cdf_m giúp trải đều mức xám của ảnh, den_cdf_m giúp trải đều giá trị của ảnh từ 0 -> 255). Sau chuẩn hóa, thay giá trị mask = 0 và chuyển sang kiểu số nguyên (cdf = np.ma.filled (cdf_m, 0).astype('uint8')), tương tự biến đổi cdf lên mảng 1 chiều và đưa mảng trở về 2 chiều (im2 = cdf[b1] và im3 = np.reshape (im2, im1.shape)).  
+Trước tiên chuyển mảng 2 chiều thành 1 chiều chứa toàn bộ pixel của ảnh (b1 = im1.flatten()), sau đó tính histogram và biên của các mức xám (histogram chứa số pixel ứng với các mức xám từ 0 -> 255) (hist, bins = np.histogram(im1, 256, [0, 255])), tính hàm phân phối tích lũy và loại bỏ giá trị 0 (cdf = hist.cumsum() và cdf_m = np.ma.masked_equal (cdf, 0)). Tiếp theo chuẩn hóa ảnh về 0 -> 255 (num_cdf_m giúp trải đều mức xám của ảnh, den_cdf_m giúp trải đều giá trị của ảnh từ 0 -> 255). Sau chuẩn hóa, thay giá trị mask = 0 và chuyển sang kiểu số nguyên (cdf = np.ma.filled (cdf_m, 0).astype('uint8')), tương tự biến đổi cdf lên mảng 1 chiều và đưa mảng trở về 2 chiều ((im2 = cdf[b1] và im3 = np.reshape (im2, im1.shape)).  
 
 
 
