@@ -6,7 +6,9 @@
 - Xử lý điểm ảnh sử dụng kĩ thuật ảnh ngược
 - Xử lý điểm ảnh sử dụng kĩ thuật histogram equalization
 - Xử lý điểm ảnh sử dụng kĩ thuật contrasting stretching
-- 
+
+
+  
  
   
 
