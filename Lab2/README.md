@@ -32,7 +32,7 @@ Tương tự với gamma = 5 thì sẽ cho ra ảnh tối hơn.
 Là biến đổi độ sáng của ảnh nhằm làm sáng những vùng tối và giảm độ chói những vùng sáng.  
 Trong bài này, công thức chính là c = (128.0 * np.log(1 + b1))/np.log (1 + b2).  
 ![image](https://github.com/user-attachments/assets/014e5521-365f-49c8-9988-9bc373829b6b)  
-Trước tiên chuyển ảnh sang kiếu float để thực hiện tính toán logarith (b1 = im_1.astype (float)), tiếp theo tìm giá trị lớn nhất của b1 (b2 = np.max (b1)), sau cùng là thay đổi cường độ điểm ảnh (c = (128.0 * np.log(1 + b1))/np.log (1 + b2)). Chọn 128 giúp cho cường độ ảnh sau biến đổi không bị quá chói so với ảnh gốc.
+Trước tiên chuyển ảnh sang kiếu float để thực hiện tính toán logarith (b1 = im_1.astype (float)), tiếp theo tìm giá trị lớn nhất của b1 (b2 = np.max (b1)), sau cùng là thay đổi cường độ điểm ảnh (c = (128.0 * np.log(1 + b1))/np.log (1 + b2)). Chọn 128 giúp cho cường độ ảnh sau biến đổi không bị quá chói so với ảnh gốc và chia cho np.log(1 + b2) giúp cho pixel sau biến đổi nằm trong khoảng hợp lý [0, 128].
 
 
 
