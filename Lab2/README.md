@@ -48,6 +48,17 @@ Trong bài này, công thức chính là im2 = 255* (c - a)/(b - a)
 ![image](https://github.com/user-attachments/assets/0a8d38fd-4d75-4498-8754-a48b786777ef)  
 Trước tiên lấy pixel lớn nhất b và nhỏ nhất a (255 và 0), biến đổi pixel sang kiểu float để thực hiện toán chia (C = im1.astype (float)) và thực hiện theo công thức 255* (c - a)/(b - a) để cải thiện ảnh.  
 
+### 6. Biến đổi Fourier  
+Là biến đổi ảnh theo miền tần suất, được sử dụng trong image filter, image compression, image enhancement, image restoration, image analysis, image reconstruction.  
+#### 6.1 Biến đổi với Fast Fourier  
+Là biến đổi ảnh từ miền không gian sang miền tần số.  
+Trong bài này, công thức chính là c = abs (scipy.fftpack.fft2 (im1))  
+![image](https://github.com/user-attachments/assets/faede7ae-fc09-48d2-bd2d-1129f69c7c6a)  
+Thực hiện biến đổi Fourier trên ảnh im1 bằng thư viện scipy.fftpack, abs sẽ lấy biên độ của kết quả biến đổi Fourier (c = abs (scipy.fftpack.fft2 (im1))). Sau đó fftshift giúp đưa tần số thấp vào giữa khung hình, tần số cao ra rìa giúp thuận tiện quan sát.  
+
+
+
+
 
 
 
