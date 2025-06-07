@@ -11,7 +11,10 @@
 Trong bài lab này có các thuật toán chính như: Image inverse transformation, Power law, Log transformation, Histogram equalization, Contrast stretching.  
 
 ## Cách hoạt động:  
+1. Image inverse transformation (Biến đổi cường độ ảnh)
 
+2. 
+3. 
 
 
 
