@@ -13,7 +13,7 @@ Trong bài lab này có các thuật toán chính như: Image inverse transforma
 ## Cách hoạt động:  
 ### 1. Image inverse transformation (Biến đổi cường độ ảnh)
 Là biến đổi cường độ ảnh từ tối sang sáng và ngược lại.  
-Công thức chính là im_2 = 255 - im_1. 
+Trong bài này, công thức chính là im_2 = 255 - im_1. 
   
 ![image](https://github.com/user-attachments/assets/5e53daab-6b45-4375-9f08-d0035709af36)  
 Đầu tiên mở ảnh mức xám bird.png, chuyển ảnh sang ndarray để thao tác pixel (im_1 = np.asarray(img)), sau đó biến đổi ảnh tại dòng im_2 = 255 - im_1.  
@@ -29,6 +29,11 @@ Tương tự với gamma = 5 thì sẽ cho ra ảnh tối hơn.
 ![image](https://github.com/user-attachments/assets/0fe907e2-01a9-4887-a223-53154f1f1eeb).  
 
 ### 3. Log Transformation (Thay đổi cường độ điểm ảnh)  
+Là biến đổi độ sáng của ảnh nhằm làm sáng những vùng tối và giảm độ chói những vùng sáng.  
+Trong bài này, công thức chính là c = (128.0 * np.log(1 + b1))/np.log (1 + b2).  
+![image](https://github.com/user-attachments/assets/014e5521-365f-49c8-9988-9bc373829b6b)  
+Trước tiên chuyển ảnh sang kiếu float để thực hiện tính toán logarith (b1 = im_1.astype (float)), tiếp theo tìm giá trị lớn nhất của b1 (b2 = np.max (b1)), sau cùng là thay đổi cường độ điểm ảnh (c = (128.0 * np.log(1 + b1))/np.log (1 + b2)). Chọn 128 giúp cho cường độ ảnh sau biến đổi không bị quá chói so với ảnh gốc.
+
 
 
 
