@@ -12,9 +12,11 @@ Trong bài lab này có các thuật toán chính như: Image inverse transforma
 
 ## Cách hoạt động:  
 1. Image inverse transformation (Biến đổi cường độ ảnh)
+Là biến đổi cường độ ảnh từ tối sang sáng và ngược lại.
+Ví dụ: ảnh gốc ban đầu có pixel lần lượt là [0 , 127, 255] (đen -> xám -> trắng) thì khi dùng phép biến đổi Image inverse transformation sẽ chuyển thành [255, 127, 0] (trắng -> xám -> đen).
 
-2. 
 3. 
+4. 
 
 
 
