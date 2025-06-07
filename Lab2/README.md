@@ -21,6 +21,8 @@ Là biến đổi cường độ ảnh từ tối sang sáng và ngược lại.
 2. Power law (Thay đổi chất lượng ảnh)
 
 Là dùng để tăng chất lượng của một bức ảnh.
+![image](https://github.com/user-attachments/assets/846a6920-9f07-407f-aad8-9722ccc3ec96)  
+
 
 
 
