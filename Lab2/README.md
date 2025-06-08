@@ -66,7 +66,28 @@ Sử dụng những điểm ảnh có tần suất cao từ biến đổi Fourie
 ![image](https://github.com/user-attachments/assets/00ee8567-4365-4b43-bfc5-c74d36ffad87)  
 Đoạn code trên là nơi giữ lại tần số cao, giảm tần số thấp. Sau giai đoạn lọc thì biến ảnh từ miền không gian về miền tần số (e = abs (scipy.fftpack.ifft2(con))).  
 
-## BÀI TẬP  
+### BÀI TẬP  
+#### Bài 1  
+Trong bài này, khi người dùng ấn phím I, G, L, H, C thì chương trình sẽ thực hiện hàm tương ứng cho các hình trong thư mục exercise. Lưu và hiển thị các ảnh đã biến đổi, ta làm như sau:  
+![image](https://github.com/user-attachments/assets/ef97d5fd-5634-4fff-ab38-6ceffab5d5d0)  
+Khai báo thư mục exercise chứa ảnh gốc và tạo thư mục output để chứa ảnh sau biến đổi.  
+![image](https://github.com/user-attachments/assets/5f10f3f1-4f41-4273-84ee-315bbe052b67)  
+Đây là hàm đọc ảnh ở chế độ Grayscale.  
+![image](https://github.com/user-attachments/assets/71bf377d-b23f-416d-8131-50b20b681655)  
+Đây là các hàm biến đổi ảnh:  
+- image_inverse giúp biến đổi cường độ ảnh, tức sáng thành tối và ngược lại.
+- power_law làm tăng chất lượng của ảnh tùy thuộc vào giá trị gamma.
+- log_transformation giúp làm sáng những vùng tối.
+- histogram_equalization cải thiện độ tương phản hai vùng sáng tối của ảnh.
+- contrast_stretch cải thiện độ tương phản tổng thể của ảnh.
+![image](https://github.com/user-attachments/assets/37dcd3b5-b5c2-4f22-9986-9e817231e197)
+Sau biến đổi, lưu ảnh vào thư mục output và hiển thị ảnh ra màn hình.
+
+
+
+
+
+
 
 
 
