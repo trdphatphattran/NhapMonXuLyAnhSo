@@ -80,6 +80,7 @@ Khai báo thư mục exercise chứa ảnh gốc và tạo thư mục output đ�
 - log_transformation giúp làm sáng những vùng tối.
 - histogram_equalization cải thiện độ tương phản hai vùng sáng tối của ảnh.
 - contrast_stretch cải thiện độ tương phản tổng thể của ảnh.
+
 ![image](https://github.com/user-attachments/assets/37dcd3b5-b5c2-4f22-9986-9e817231e197)
 Sau biến đổi, lưu ảnh vào thư mục output và hiển thị ảnh ra màn hình.
 
