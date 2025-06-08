@@ -83,7 +83,14 @@ Khai báo thư mục exercise chứa ảnh gốc và tạo thư mục output đ�
 
 ![image](https://github.com/user-attachments/assets/37dcd3b5-b5c2-4f22-9986-9e817231e197)
 
-Sau biến đổi, lưu ảnh vào thư mục output và hiển thị ảnh ra màn hình.
+Sau biến đổi, lưu ảnh vào thư mục output và hiển thị ảnh ra màn hình.  
+![image](https://github.com/user-attachments/assets/50344b01-2bd7-45ad-99a0-5f20e71a7017)  
+Cho người dùng nhập vào lựa chọn họ muốn biến đổi ảnh.  
+![image](https://github.com/user-attachments/assets/84f3c3f2-16a5-49e6-8ce9-8d3c1482735d)  
+Sau khi người dùng chọn xong, ảnh sẽ được xử lý và hiển thị ra màn hình.  
+
+
+
 
 
 
