@@ -64,7 +64,10 @@ Sử dụng những điểm ảnh có tần suất thấp từ biến đổi Fou
 ##### Butterworth highpass Filter  
 Sử dụng những điểm ảnh có tần suất cao từ biến đổi Fourier, highpass dùng để làm sắc biên của ảnh.  
 ![image](https://github.com/user-attachments/assets/00ee8567-4365-4b43-bfc5-c74d36ffad87)  
-Đoạn code trên là nơi giữ lại tần số cao, giảm tần số thấp. Sau giai đoạn lọc thì biến ảnh từ miền không gian về miền tần số (e = abs (scipy.fftpack.ifft2(con)))
+Đoạn code trên là nơi giữ lại tần số cao, giảm tần số thấp. Sau giai đoạn lọc thì biến ảnh từ miền không gian về miền tần số (e = abs (scipy.fftpack.ifft2(con))).  
+
+## BÀI TẬP  
+
 
 
 
