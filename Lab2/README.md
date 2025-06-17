@@ -171,6 +171,10 @@ Chọn một phép biến đổi ngẫu nhiên từ danh sách transform_functio
 Gọi hàm func để biến đổi ảnh xám (result = func(img_gray)).  
 ![image](https://github.com/user-attachments/assets/dc477150-ef91-4b6b-ac2e-d1811320c09e)  
 Nếu tên của phép biến đổi là butter_low thì dùng min filter để làm mờ ảnh hơn. Còn nếu tên của phép biến đổi là butter_high thì dùng max filter để làm rõ chi tiết ảnh hơn.  
+![image](https://github.com/user-attachments/assets/2a3eb9b4-903d-43b1-a3e4-6af84195dac5)  
+Lưu ảnh vào thư mục sau biến đổi.  
+
+
 
 
 
