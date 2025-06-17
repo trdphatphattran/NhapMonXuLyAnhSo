@@ -125,7 +125,27 @@ Sau biến đổi, lưu ảnh vào thư mục output và hiển thị ảnh ra m
 ![image](https://github.com/user-attachments/assets/b002597a-4b07-4aab-8812-9612c8d22ddc)  
 Cho người dùng nhập vào lựa chọn  
 ![image](https://github.com/user-attachments/assets/5705e1b7-36f5-42de-9b0c-8f392dad48c3)  
-Sau khi chịn, ảnh sẽ được xử lý và hiển thị  
+Sau khi chịn, ảnh sẽ được xử lý và hiển thị.  
+
+#### Bài 3  
+Trong bài này, viết chương trình thay đổi thứ tự màu RGB của ảnh trong thư mục exercise và sử dụng ngẫu nhiên một trong các phép biến đổi ảnh trong câu 1. Lưu và hiển thị ảnh đã biến đổi, ta làm như sau:  
+![image](https://github.com/user-attachments/assets/5fe1b1f3-d419-4cec-8bf2-8c3821b3a047)  
+Khai báo thư mục exercise chứa ảnh gốc và tạo thư mục output để chứa ảnh sau biến đổi.  
+![image](https://github.com/user-attachments/assets/978f6fee-9dbf-4f7a-bbbf-da98e8edcdfe)  
+Đây là các hàm biến đổi ảnh:  
+- image_inverse giúp biến đổi cường độ ảnh, tức sáng thành tối và ngược lại.
+- power_law làm tăng chất lượng của ảnh tùy thuộc vào giá trị gamma.
+- log_transformation giúp làm sáng những vùng tối.
+- histogram_equalization cải thiện độ tương phản hai vùng sáng tối của ảnh.
+- contrast_stretch cải thiện độ tương phản tổng thể của ảnh.
+![image](https://github.com/user-attachments/assets/0ec901ae-a9dd-4010-bf72-897593d8deb2)  
+Đây là danh sách biến đổi ảnh, gồm tên và hàm.
+  í dụ:
+  
+
+
+
+
 
 
 
