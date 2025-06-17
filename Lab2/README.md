@@ -103,7 +103,28 @@ Dịch chuyển tần số 0 vào giữa ảnh để dễ quan sát (fshift = np
 Tính phổ biên độ (magnitude_spectrum = 20 * np.log(np.abs(fshift) + 1))  
 Chuẩn hóa phổ biên độ về [0, 255] (return np.uint8(255 * magnitude_spectrum / np.max(magnitude_spectrum))).  
 ##### Butterworth Lowpass Filter  
-![image](https://github.com/user-attachments/assets/d0252716-d382-46d3-9136-67b92f59c0aa)  
+![image](https://github.com/user-attachments/assets/7713859e-a1dd-4394-9fed-bb9a9a58df4a)  
+Lấy kích thước ảnh và tọa độ trung tâm  
+![image](https://github.com/user-attachments/assets/4650c9f2-427a-45ea-84a7-0993b2c65ee5)  
+Tạo ma trận khoảng cách từ mỗi điểm đến tâm ảnh.  
+Tạo bộ lọc Butterworth Lowpass (H = 1 / (1 + (d / cutoff)**(2 * order)))  
+![image](https://github.com/user-attachments/assets/53f89930-a3a1-4320-bfe6-c828bf3d9b7c)  
+Biến đổi Fourier -> dịch tâm về giữa -> nhân với bộ lọc H trog miền tần số  
+Biến đổi ngược Fourier về miền không gian (img_back = np.fft.ifft2(np.fft.ifftshift(f_filtered)))  
+##### Butterworth Highpass Filter  
+![image](https://github.com/user-attachments/assets/7713859e-a1dd-4394-9fed-bb9a9a58df4a)  
+Lấy kích thước ảnh và tọa độ trung tâm  
+![image](https://github.com/user-attachments/assets/4650c9f2-427a-45ea-84a7-0993b2c65ee5)  
+Tạo ma trận khoảng cách từ mỗi điểm đến tâm ảnh.  
+Tạo bộ lọc Butterworth Lowpass (H = 1 / (1 + (cutoff / (d + 1e-5))**(2 * order)))    
+![image](https://github.com/user-attachments/assets/53f89930-a3a1-4320-bfe6-c828bf3d9b7c)  
+Biến đổi Fourier -> dịch tâm về giữa -> nhân với bộ lọc H trog miền tần số  
+Biến đổi ngược Fourier về miền không gian (img_back = np.fft.ifft2(np.fft.ifftshift(f_filtered)))  
+
+
+
+
+
 
 
 
