@@ -120,6 +120,16 @@ Tạo bộ lọc Butterworth Lowpass (H = 1 / (1 + (cutoff / (d + 1e-5))**(2 * o
 ![image](https://github.com/user-attachments/assets/53f89930-a3a1-4320-bfe6-c828bf3d9b7c)  
 Biến đổi Fourier -> dịch tâm về giữa -> nhân với bộ lọc H trog miền tần số  
 Biến đổi ngược Fourier về miền không gian (img_back = np.fft.ifft2(np.fft.ifftshift(f_filtered)))  
+![image](https://github.com/user-attachments/assets/627523e9-c745-4d7a-bfc8-a4b2a4efd9f5)  
+Sau biến đổi, lưu ảnh vào thư mục output và hiển thị ảnh ra màn hình.  
+![image](https://github.com/user-attachments/assets/b002597a-4b07-4aab-8812-9612c8d22ddc)  
+Cho người dùng nhập vào lựa chọn  
+![image](https://github.com/user-attachments/assets/5705e1b7-36f5-42de-9b0c-8f392dad48c3)  
+Sau khi chịn, ảnh sẽ được xử lý và hiển thị  
+
+
+
+
 
 
 
