@@ -90,6 +90,25 @@ Cho người dùng nhập vào lựa chọn họ muốn biến đổi ảnh.
   
 Sau khi người dùng chọn xong, ảnh sẽ được xử lý và hiển thị ra màn hình.  
 
+#### Bài 2  
+Trong bài này, khi người dùng ấn phím F, L, H  thì chương trình sẽ thực hiện hàm tương ứng cho các hình trong thư mục exercise. Lưu và hiển thị các ảnh đã biến đổi, ta làm như sau:  
+![image](https://github.com/user-attachments/assets/06d771eb-0773-4847-90cd-c365a12dcfe4)  
+Khai báo thư mục exercise chứa ảnh gốc và tạo thư mục output để chứa ảnh sau biến đổi.  
+![image](https://github.com/user-attachments/assets/409fc8ea-9537-4508-8434-711a07f960e2)  
+Đây là hàm đọc ảnh ở chế độ Grayscale.  
+![image](https://github.com/user-attachments/assets/3ab72261-a6ac-40d2-b3ee-a735e5dcc883)  
+Thực hiện biến đổi Fourier 2 chiều trên ảnh xám (f = np.fft.fft2(img))  
+Dịch chuyển tần số 0 vào giữa ảnh để dễ quan sát (fshift = np.fft.fftshift(f))  
+Tính phổ biên độ (magnitude_spectrum = 20 * np.log(np.abs(fshift) + 1))  
+Chuẩn hóa phổ biên độ về [0, 255] (return np.uint8(255 * magnitude_spectrum / np.max(magnitude_spectrum))).  
+
+
+
+
+
+
+
+
 
 
 
