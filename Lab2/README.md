@@ -152,6 +152,34 @@ Gọi hàm func để biến đổi ảnh xám (result = func(img_gray)).
 ![image](https://github.com/user-attachments/assets/3d74bdd5-f9b2-44bf-86fc-ad5882f3ee66)  
 Lưu ảnh vào thư mục sau biến đổi.  
 
+#### Bài 4  
+Trong bài này, viết chương trình thay đổi thứ tự màu RGB của ảnh trong thư mục exercise và sử dụng ngẫu
+nhiên một trong các phép biến đổi ảnh trong câu 2. Nếu ngẫu nhiên là phép Butterworth Lowpass thì chọn thêm Min Filter để lọc ảnh. Nếu ngẫu nhiên là phép Butterworth Highpass thì chọn thêm Max Filter để lọc ảnh. Lưu và hiển thị ảnh đã biến đổi, ta làm như sau:  
+![image](https://github.com/user-attachments/assets/6cfb8da3-3dcf-4118-839d-bde0ba598743)  
+Khai báo thư mục exercise chứa ảnh gốc và tạo thư mục output để chứa ảnh sau biến đổi.  
+![image](https://github.com/user-attachments/assets/3d715c56-171c-4d3e-b1cf-0a85fe09aed4)  
+Phần này giống với câu 2 đã trình bày về Fourier, butterworth lowpass filter và butterworth highpass filter.  
+![image](https://github.com/user-attachments/assets/8024618d-cbe5-47c1-b9d9-4404af60f2a5)  
+Đây là danh sách biến đổi ảnh, gồm tên và hàm.  
+Ví dụ: tên: fourier, hàm: fast_fourier.  
+![image](https://github.com/user-attachments/assets/09b0f08e-d0af-4029-8cf9-c1e81eb7ee9b)  
+Mở ảnh tử thư mục exercise, nếu ảnh lỗi thì xuất ra thông báo.  
+![image](https://github.com/user-attachments/assets/8d9eea37-b6f3-43e8-a282-35d9eb340533)  
+Đảo ngẫu nhiên thứ tự của màu RGB.  
+Sau đảo, chuyển ảnh RGB sang ảnh xám (img_gray = cv2.cvtColor(img_rgb, cv2.COLOR_BGR2GRAY))  
+Chọn một phép biến đổi ngẫu nhiên từ danh sách transform_functions (method_name, func = random.choice(transform_functions)).  
+Gọi hàm func để biến đổi ảnh xám (result = func(img_gray)).  
+![image](https://github.com/user-attachments/assets/dc477150-ef91-4b6b-ac2e-d1811320c09e)  
+Nếu tên của phép biến đổi là butter_low thì dùng min filter để làm mờ ảnh hơn. Còn nếu tên của phép biến đổi là butter_high thì dùng max filter để làm rõ chi tiết ảnh hơn.  
+
+
+
+
+
+
+
+
+
 
 
 
