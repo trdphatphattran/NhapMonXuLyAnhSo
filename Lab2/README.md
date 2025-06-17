@@ -138,9 +138,26 @@ Khai báo thư mục exercise chứa ảnh gốc và tạo thư mục output đ�
 - log_transformation giúp làm sáng những vùng tối.
 - histogram_equalization cải thiện độ tương phản hai vùng sáng tối của ảnh.
 - contrast_stretch cải thiện độ tương phản tổng thể của ảnh.
-![image](https://github.com/user-attachments/assets/0ec901ae-a9dd-4010-bf72-897593d8deb2)  
-Đây là danh sách biến đổi ảnh, gồm tên và hàm.
-  í dụ:
+![image](https://github.com/user-attachments/assets/0ec901ae-a9dd-4010-bf72-897593d8deb2)
+
+Đây là danh sách biến đổi ảnh, gồm tên và hàm.  
+Ví dụ: tên: inverse, hàm: image_inverse.  
+![image](https://github.com/user-attachments/assets/09b0f08e-d0af-4029-8cf9-c1e81eb7ee9b)  
+Mở ảnh tử thư mục exercise, nếu ảnh lỗi thì xuất ra thông báo.  
+![image](https://github.com/user-attachments/assets/8d9eea37-b6f3-43e8-a282-35d9eb340533)  
+Đảo ngẫu nhiên thứ tự của màu RGB.  
+Sau đảo, chuyển ảnh RGB sang ảnh xám (img_gray = cv2.cvtColor(img_rgb, cv2.COLOR_BGR2GRAY))  
+Chọn một phép biến đổi ngẫu nhiên từ danh sách transform_functions (method_name, func = random.choice(transform_functions)).  
+Gọi hàm func để biến đổi ảnh xám (result = func(img_gray)).  
+![image](https://github.com/user-attachments/assets/3d74bdd5-f9b2-44bf-86fc-ad5882f3ee66)  
+Lưu ảnh vào thư mục sau biến đổi.  
+
+
+
+
+
+
+
   
 
 
