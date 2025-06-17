@@ -96,11 +96,17 @@ Trong bài này, khi người dùng ấn phím F, L, H  thì chương trình s�
 Khai báo thư mục exercise chứa ảnh gốc và tạo thư mục output để chứa ảnh sau biến đổi.  
 ![image](https://github.com/user-attachments/assets/409fc8ea-9537-4508-8434-711a07f960e2)  
 Đây là hàm đọc ảnh ở chế độ Grayscale.  
+##### Fast Fourier  
 ![image](https://github.com/user-attachments/assets/3ab72261-a6ac-40d2-b3ee-a735e5dcc883)  
 Thực hiện biến đổi Fourier 2 chiều trên ảnh xám (f = np.fft.fft2(img))  
 Dịch chuyển tần số 0 vào giữa ảnh để dễ quan sát (fshift = np.fft.fftshift(f))  
 Tính phổ biên độ (magnitude_spectrum = 20 * np.log(np.abs(fshift) + 1))  
 Chuẩn hóa phổ biên độ về [0, 255] (return np.uint8(255 * magnitude_spectrum / np.max(magnitude_spectrum))).  
+##### Butterworth Lowpass Filter  
+![image](https://github.com/user-attachments/assets/d0252716-d382-46d3-9136-67b92f59c0aa)  
+
+
+
 
 
 
