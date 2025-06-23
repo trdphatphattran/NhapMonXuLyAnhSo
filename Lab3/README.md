@@ -67,11 +67,23 @@ Giải thích:
 - Dilation (giãn ảnh): thay thế pixel tọa độ (i, j) bằng giá trị lớn nhất của những pixel lân cận (kề).
 - Erosion (co ảnh): thay thế pixel tọa độ (i, j) bằng giá trị nhỏ nhất của những pixel lân cận (kề).
 Code chính:
-![image](https://github.com/user-attachments/assets/da72e862-aace-41da-a56e-85917a17b0ea)
-Giải thích:
-- d1 = nd.binary_dilation(data): giãn ảnh với 1 lần lặp.
-- d2 = nd.binary_dilation (data, iterations=3): giãn ảnh lặp lại 3 lần.
+![image](https://github.com/user-attachments/assets/da72e862-aace-41da-a56e-85917a17b0ea)  
+Giải thích:  
+- d1 = nd.binary_dilation(data): giãn ảnh với 1 lần lặp.  
+- d2 = nd.binary_dilation (data, iterations=3): giãn ảnh lặp lại 3 lần.  
 - e1 = nd.binary_erosion(data): co ảnh 1 lần.
+
+### 6. Coordinate Mapping  
+Cho phép tạo hàm mới do người dùng định nghĩa ngoài các hàm có sẵn như shifting, rotate.  
+- Tạo 1 coordinate map chứa các pixel mới.   
+- Dùng hàm map_coordinate để ánh xạ vị trí mới cho ảnh đầu vào.
+Code chính:
+![image](https://github.com/user-attachments/assets/c2cdcb8f-cbeb-43dd-a82e-cb163f0ad26a)
+Giải thích:
+- abc:
++ ssa
++ 
+
 
 
 
