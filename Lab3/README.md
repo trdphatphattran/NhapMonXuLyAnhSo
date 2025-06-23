@@ -55,12 +55,12 @@ Công thức:
 rotate(image, degree)  
 Trong đó:  
 - image: ảnh trong bộ nhớ.
-- degree: góc xoay.
-Code chính:
-![image](https://github.com/user-attachments/assets/8756ed1e-7cbe-4772-9989-3f40bc202363)
-Giải thích:
-- d1 = nd.rotate(data, 20): ảnh kết quả sẽ mở rộng đủ để chứa toàn bộ ảnh đã xoay.
-- d2 = nd.rotate(data, 20, reshape=False): ảnh kết quả giữ nguyên kích thước cũ, nên cắt mất góc.
+- degree: góc xoay.  
+Code chính:  
+![image](https://github.com/user-attachments/assets/8756ed1e-7cbe-4772-9989-3f40bc202363)  
+Giải thích:  
+- d1 = nd.rotate(data, 20): ảnh kết quả sẽ mở rộng đủ để chứa toàn bộ ảnh đã xoay.  
+- d2 = nd.rotate(data, 20, reshape=False): ảnh kết quả giữ nguyên kích thước cũ, nên cắt mất góc.  
 
 
 
