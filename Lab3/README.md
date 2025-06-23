@@ -7,7 +7,7 @@
 - Viết được chương trình biến đổi cực
 ## Giới thiệu  
 Biến đổi hình học là sắp xếp lại vị trí các điểm ảnh. Có 2 phép biến đổi là tịnh tiến và xoay.  
-## Cách hoạt động:  
+## Phần 1: Viết chương trình biến đổi điểm ảnh    
 ### 1. Chọn đối tượng trong ảnh:  
 Là phép trích ảnh nhỏ trong ảnh lớn ban đầu.  
 #### Công thức cắt ảnh: [y1:y2, x1:x2]  
@@ -102,6 +102,21 @@ Code chính:
 Giải thích:  
 - fy(y, x): a = 10 * np.cos(outcoord[0]/10.0 + outcoord[0]).  
 - fx(y, x): b = 10 * np.cos(outcoord[1]/10.0 + outcoord[1]).
+
+## Phần 2: Bài tập  
+### Bài 1:  
+Trong bài này, Viết chương trình chọn quả kiwi từ ảnh colorful-ripe-tropical-fruits.jpg trong thư mục exercise. Tinh tiến quả kiwi sang phải 30 pixels ta làm như sau:  
+![image](https://github.com/user-attachments/assets/9e0a1538-66fb-41d7-a6b3-087714383f8e)  
+- Tìm tọa độ quả kiwi trong ảnh gốc.
+- (0, 30, 0): chiều cao không dịch, dịch sang phải 30 pixels, kênh màu không dịch.
+- In ảnh mới ra màn hình.
+
+### Bài 2:  
+
+
+
+
+
 
 
 
