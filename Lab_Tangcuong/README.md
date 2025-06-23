@@ -38,6 +38,26 @@ Tạo 1 ảnh nền có kích thước lớn để chứa đủ 2 quả:
 - Cả 2 được dán lên nền trong suốt alpha = 255.
 - Dưa hấu nằm bên phải, cách đu đủ 50px.
 
+### Bài 3:  
+Trong bài này, Chọn ảnh núi và thuyền. Xoay cả hai đối tượng 45 độ, giữ kích thước ban đầu (reshape=False). Tạo hiệu ứng phản chiếu dọc (vertical mirror) cho cả hai đối tượng sau khi xoay. Ghép cả hai đối tượng lên một canvas trắng và lưu vào mountain_boat_mirror.jpg ta làm như sau:  
+![image](https://github.com/user-attachments/assets/95496724-a36f-485d-9346-55bd7b004d48)  
+Chọn ảnh núi và thuyền, xoay ảnh 45 độ không đổi kích thước.  
+![image](https://github.com/user-attachments/assets/b9b29ba9-8d61-42f6-91a9-8a8858ecf86d)  
+Phản chiếu dọc.  
+![image](https://github.com/user-attachments/assets/113e483f-2dc2-4c06-bc29-b24288065e1b)  
+Tinh kích thước và tạo nền trắng:  
+- H: chiều cao canvas là lớn nhất giữa 2 ảnh.
+- W: tổng chiều rộng 2 ảnh + 50px khoảng cách.
+
+![image](https://github.com/user-attachments/assets/b3b35e60-f47b-48d8-8007-daa3cb0a65f1)  
+Ghép ảnh vào canvas, mountain_mirror vào góc bên trái, boat_mirror vào bên phải.  
+
+
+
+
+
+
+
 
 
 
