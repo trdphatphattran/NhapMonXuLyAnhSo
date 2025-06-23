@@ -60,7 +60,23 @@ Code chính:
 ![image](https://github.com/user-attachments/assets/8756ed1e-7cbe-4772-9989-3f40bc202363)  
 Giải thích:  
 - d1 = nd.rotate(data, 20): ảnh kết quả sẽ mở rộng đủ để chứa toàn bộ ảnh đã xoay.  
-- d2 = nd.rotate(data, 20, reshape=False): ảnh kết quả giữ nguyên kích thước cũ, nên cắt mất góc.  
+- d2 = nd.rotate(data, 20, reshape=False): ảnh kết quả giữ nguyên kích thước cũ, nên cắt mất góc.
+
+### 5. Dilation và Erosion  
+- Dùng để loại bỏ những pixel nhiễu.
+- Dilation (giãn ảnh): thay thế pixel tọa độ (i, j) bằng giá trị lớn nhất của những pixel lân cận (kề).
+- Erosion (co ảnh): thay thế pixel tọa độ (i, j) bằng giá trị nhỏ nhất của những pixel lân cận (kề).
+Code chính:
+![image](https://github.com/user-attachments/assets/da72e862-aace-41da-a56e-85917a17b0ea)
+Giải thích:
+- d1 = nd.binary_dilation(data): giãn ảnh với 1 lần lặp.
+- d2 = nd.binary_dilation (data, iterations=3): giãn ảnh lặp lại 3 lần.
+- e1 = nd.binary_erosion(data): co ảnh 1 lần.
+
+
+
+
+
 
 
 
