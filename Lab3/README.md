@@ -35,7 +35,22 @@ Code chính:
 ![image](https://github.com/user-attachments/assets/54953ce4-6d16-446b-bb97-01fc49bc2603)  
 Giải thích:  
 - Dịch chuyển 100 pixel xuống dưới.
-- Dịch chuyển 25 pixel sang phải.  
+- Dịch chuyển 25 pixel sang phải.
+
+### 3. Thay đổi kích thước ảnh  
+Là tăng hoặc giảm không gian ảnh.  
+Công thức:  
+Kích thước mới = Kích thước cũ * Chỉ số zoom.  
+Code chính:  
+![image](https://github.com/user-attachments/assets/a5ee9104-60df-4cca-9da8-4218910b50bd)  
+Giải thích:  
+Cho ảnh gốc có giá trị data.shape = [height, width, channels].  
+- bdata = nd.zoom(data, 2):  Zoom lên 2 lần ở tắt cả các chiều (kể cả màu).
+- data2 = nd.zoom(data, (2, 2, 1)): Chiều cao và rộng nhân 2, màu giữ nguyên.
+- data3 = nd.zoom(data, (0.5, 0.9, 1)): Chiều cao * 0.5, Chiều rộng * 0.9, màu giữ nguyên.
+
+
+
 
 
 
