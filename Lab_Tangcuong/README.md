@@ -52,6 +52,23 @@ Tinh kích thước và tạo nền trắng:
 ![image](https://github.com/user-attachments/assets/b3b35e60-f47b-48d8-8007-daa3cb0a65f1)  
 Ghép ảnh vào canvas, mountain_mirror vào góc bên trái, boat_mirror vào bên phải.  
 
+### Bài 4:  
+Trong bài này, chọn ngôi chùa bất kì. Phóng to ngôi chùa lên 5 lần. Áp dụng một biến đổi hình học tùy chỉnh (geometric transform) để tạo hiệu ứng "uốn cong" (warping) ngôi chùa. Lưu ảnh kết quả vào pagoda_warped.jpg ta làm như sau:  
+![image](https://github.com/user-attachments/assets/6a6f4f20-7fb6-4ab4-84e3-a3c1190372e3)  
+Chọn ảnh và phóng to: chiều dài và rộng tăng 5, kênh màu giữ nguyên.  
+![image](https://github.com/user-attachments/assets/af30d8ad-1e43-47d6-a35c-3b5a97aef6ea)  
+Uốn cong ảnh:  
+- h: Chiều cao.
+- w: Chiều rộng.
+- c: Kênh màu.
+- Y: Chứa các chỉ số dòng.
+- X: Chứa các chỉ số cột.
+- Y += 10 * np.sin(X / 30.0): làm cong toàn bộ ảnh theo chiều dọc bằng sóng hình sin.
+
+
+
+
+
 
 
 
