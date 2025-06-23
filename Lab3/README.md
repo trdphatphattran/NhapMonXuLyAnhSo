@@ -49,6 +49,23 @@ Cho ảnh gốc có giá trị data.shape = [height, width, channels].
 - data2 = nd.zoom(data, (2, 2, 1)): Chiều cao và rộng nhân 2, màu giữ nguyên.
 - data3 = nd.zoom(data, (0.5, 0.9, 1)): Chiều cao * 0.5, Chiều rộng * 0.9, màu giữ nguyên.
 
+### 4. Xoay ảnh  
+Là xoay toàn bộ ảnh sang một góc cố định.  
+Công thức:  
+rotate(image, degree)  
+Trong đó:  
+- image: ảnh trong bộ nhớ.
+- degree: góc xoay.
+Code chính:
+![image](https://github.com/user-attachments/assets/8756ed1e-7cbe-4772-9989-3f40bc202363)
+Giải thích:
+- d1 = nd.rotate(data, 20): ảnh kết quả sẽ mở rộng đủ để chứa toàn bộ ảnh đã xoay.
+- d2 = nd.rotate(data, 20, reshape=False): ảnh kết quả giữ nguyên kích thước cũ, nên cắt mất góc.
+
+
+
+
+
 
 
 
