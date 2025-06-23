@@ -10,7 +10,7 @@ Biến đổi hình học là sắp xếp lại vị trí các điểm ảnh. C�
 ## Cách hoạt động:  
 ### 1. Chọn đối tượng trong ảnh:  
 Là phép trích ảnh nhỏ trong ảnh lớn ban đầu.  
-Công thức cắt ảnh: [y1:y2, x1:x2]  
+#### Công thức cắt ảnh: [y1:y2, x1:x2]  
 Trong đó:  
 x1: Cột bắt đầu (bên trái).  
 x2: Cột kết thúc (bên phải).  
@@ -24,7 +24,7 @@ Giải thích:
 
 ### 2. Tịnh tiến đơn  
 Là di chuyển toàn bộ ảnh theo một hướng cố định.  
-Công thức tịnh tiến:  
+#### Công thức tịnh tiến:  
 (x, y) --> (x', y') = (x + dx, y + dy)  
 Trong đó:  
 x, y: Tọa độ điểm ban đầu.  
@@ -39,7 +39,7 @@ Giải thích:
 
 ### 3. Thay đổi kích thước ảnh  
 Là tăng hoặc giảm không gian ảnh.  
-Công thức:  
+#### Công thức:  
 Kích thước mới = Kích thước cũ * Chỉ số zoom.  
 Code chính:  
 ![image](https://github.com/user-attachments/assets/a5ee9104-60df-4cca-9da8-4218910b50bd)  
