@@ -92,16 +92,18 @@ Dùng khi ta muốn biến đổi các ảnh chung phép toán do người dùng
 Công thức:  
 I1 (y, x) = I2 (fy(y, x), fx(y, x)).  
 Trong đó:  
-- (y, x): Tọa độ điểm ban đầu.
-- fy(y, x): Hàm ánh xạ ngược theo trục Y.
-- fx(y, x): Hầm ánh xạ ngược theo trục X.
-- I2: giá trị điểm ảnh trong ảnh gốc.
-- I1: ảnh sau biến đổi.
-Code chính:
-![image](https://github.com/user-attachments/assets/3ee8dfa0-3a68-4ee4-948d-90964e357727)
-Giải thích:
-- fy(y, x): a = 10 * np.cos(outcoord[0]/10.0 + outcoord[0]).
+- (y, x): Tọa độ điểm ban đầu.  
+- fy(y, x): Hàm ánh xạ ngược theo trục Y.  
+- fx(y, x): Hầm ánh xạ ngược theo trục X.  
+- I2: giá trị điểm ảnh trong ảnh gốc.  
+- I1: ảnh sau biến đổi.  
+Code chính:  
+![image](https://github.com/user-attachments/assets/3ee8dfa0-3a68-4ee4-948d-90964e357727)  
+Giải thích:  
+- fy(y, x): a = 10 * np.cos(outcoord[0]/10.0 + outcoord[0]).  
 - fx(y, x): b = 10 * np.cos(outcoord[1]/10.0 + outcoord[1]).
+
+
 
  
 
