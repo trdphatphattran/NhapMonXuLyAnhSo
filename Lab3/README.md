@@ -76,13 +76,36 @@ Giải thích:
 ### 6. Coordinate Mapping  
 Cho phép tạo hàm mới do người dùng định nghĩa ngoài các hàm có sẵn như shifting, rotate.  
 - Tạo 1 coordinate map chứa các pixel mới.   
-- Dùng hàm map_coordinate để ánh xạ vị trí mới cho ảnh đầu vào.
+- Dùng hàm map_coordinate để ánh xạ vị trí mới cho ảnh đầu vào.  
+Code chính:  
+![image](https://github.com/user-attachments/assets/c2cdcb8f-cbeb-43dd-a82e-cb163f0ad26a)  
+Giải thích:  
+- V: Chiều cao.
+- H: Chiều rộng.
+- M: Tạo 1 lưới tọa độ 2D tương ứng với kích thước ảnh.
+- d: Mức độ nhiễu.
+- q: Sinh ra một mảng q có cùng kích thước với M, chứa giá trị trong khoảng [-d; d].
+- mp: Cộng M với q sẽ sinh ra lưới tọa độ mới.  
+
+### 7. Biến đổi chung (Generic Transformation)  
+Dùng khi ta muốn biến đổi các ảnh chung phép toán do người dùng định nghĩa.  
+Công thức:  
+I1 (y, x) = I2 (fy(y, x), fx(y, x)).  
+Trong đó:  
+- (y, x): Tọa độ điểm ban đầu.
+- fy(y, x): Hàm ánh xạ ngược theo trục Y.
+- fx(y, x): Hầm ánh xạ ngược theo trục X.
+- I2: giá trị điểm ảnh trong ảnh gốc.
+- I1: ảnh sau biến đổi.
 Code chính:
-![image](https://github.com/user-attachments/assets/c2cdcb8f-cbeb-43dd-a82e-cb163f0ad26a)
+![image](https://github.com/user-attachments/assets/3ee8dfa0-3a68-4ee4-948d-90964e357727)
 Giải thích:
-- abc:
-+ ssa
-+ 
+- fy(y, x): a = 10 * np.cos(outcoord[0]/10.0 + outcoord[0]).
+- fx(y, x): b = 10 * np.cos(outcoord[1]/10.0 + outcoord[1]).
+
+ 
+
+
 
 
 
