@@ -33,6 +33,13 @@ Tạo gradient vàng -> tím cho dưa hấu:
 
 ![image](https://github.com/user-attachments/assets/8a1da8fb-bc2d-46f4-a7a6-127eaa335fb3)  
 Tạo nền trong suốt và ghép ảnh.  
+![image](https://github.com/user-attachments/assets/ea3e9ed1-e810-482e-8deb-ac17c8611674)  
+Tạo 1 ảnh nền có kích thước lớn để chứa đủ 2 quả:  
+- Cả 2 được dán lên nền trong suốt alpha = 255.
+- Dưa hấu nằm bên phải, cách đu đủ 50px.
+
+
+
 
 
 
