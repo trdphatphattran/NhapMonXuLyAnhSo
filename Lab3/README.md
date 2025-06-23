@@ -12,10 +12,10 @@ Biến đổi hình học là sắp xếp lại vị trí các điểm ảnh. C�
 Là phép trích ảnh nhỏ trong ảnh lớn ban đầu.  
 #### Công thức cắt ảnh: [y1:y2, x1:x2]  
 Trong đó:  
-x1: Cột bắt đầu (bên trái).  
-x2: Cột kết thúc (bên phải).  
-y1: Dòng bắt đầu (bên trên).  
-y2: Dòng kết thúc (bên dưới).  
+- x1: Cột bắt đầu (bên trái).  
+- x2: Cột kết thúc (bên phải).  
+- y1: Dòng bắt đầu (bên trên).  
+- y2: Dòng kết thúc (bên dưới).  
 Code chính:  
 ![image](https://github.com/user-attachments/assets/9a888dee-8529-43ca-8e9a-d6f5c6c4cd73)  
 Giải thích:  
@@ -27,10 +27,10 @@ Là di chuyển toàn bộ ảnh theo một hướng cố định.
 #### Công thức tịnh tiến:  
 (x, y) --> (x', y') = (x + dx, y + dy)  
 Trong đó:  
-x, y: Tọa độ điểm ban đầu.  
-x', y': Tọa độ điểm sau tịnh tiến.  
-dx: Tịnh tiến theo chiều ngang.  
-dy: Tịnh tiến theo chiều dọc.  
+- x, y: Tọa độ điểm ban đầu.  
+- x', y': Tọa độ điểm sau tịnh tiến.  
+- dx: Tịnh tiến theo chiều ngang.  
+- dy: Tịnh tiến theo chiều dọc.  
 Code chính:  
 ![image](https://github.com/user-attachments/assets/54953ce4-6d16-446b-bb97-01fc49bc2603)  
 Giải thích:  
