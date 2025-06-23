@@ -105,13 +105,43 @@ Giải thích:
 
 ## Phần 2: Bài tập  
 ### Bài 1:  
-Trong bài này, Viết chương trình chọn quả kiwi từ ảnh colorful-ripe-tropical-fruits.jpg trong thư mục exercise. Tinh tiến quả kiwi sang phải 30 pixels ta làm như sau:  
+Trong bài này, viết chương trình chọn quả kiwi từ ảnh colorful-ripe-tropical-fruits.jpg trong thư mục exercise. Tinh tiến quả kiwi sang phải 30 pixels ta làm như sau:  
 ![image](https://github.com/user-attachments/assets/9e0a1538-66fb-41d7-a6b3-087714383f8e)  
 - Tìm tọa độ quả kiwi trong ảnh gốc.
 - (0, 30, 0): chiều cao không dịch, dịch sang phải 30 pixels, kênh màu không dịch.
 - In ảnh mới ra màn hình.
 
 ### Bài 2:  
+Trong bài này, viết chương trình chọn quả đu đủ và quả dưa hấu từ ảnh colorful-ripe-tropical-fruits.jpg trong thư mục exercise. Đổi màu hai đối tượng này ta làm như sau:  
+![image](https://github.com/user-attachments/assets/755d07cc-ef41-411a-977d-d5659b1fd52a)  
+- Tìm tọa độ quả đu đủ và dưa hấu trong ảnh gốc.
+- [0.5, 0.5, 1.2], 0, 255: giảm đỏ và xanh lá xuống 50%, tăng xanh dương lên 120%.
+- [1.2, 0.5, 1.2], 0, 255: tăng đỏ và xanh dương lên 120%, giảm xanh lá xuống 50%.
+- astype(np.uint8): ép kiểu ảnh về dạng 8-bit.
+- In 2 ảnh mới ra màn hình.
+
+### Bài 3:  
+Trong bài này, viết chương trình chọn ngọn núi và con thuyền từ ảnh quang_ninh.jpg trong thư mục exercise. Xoay 2 đối tượng này 1 góc 45 độ và lưu vào máy ta làm như sau:  
+![image](https://github.com/user-attachments/assets/b46975ad-86e2-45e1-bce9-758469356a45)  
+- Tìm tọa độ của núi và con tàu trong ảnh gốc.
+- d1 = nd.rotate(bmg, 45): trả về ảnh núi đã xoay 45 độ.
+- d2 = nd.rotate(bmg2, 45): trả về ảnh tàu đã xoay 45 độ.
+- In 2 ảnh mới ra màn hình.
+
+### Bài 4:  
+Trong bài này, viết chương trình chọn ngôi chùa từ ảnh pagoda.jpg trong thư mục exercise. Tăng kích thước ngôi chùa lên 5 lần và lưu vào máy ta làm như sau:  
+![image](https://github.com/user-attachments/assets/4cf4d51a-b21b-47e6-b883-91e26609f26a)  
+- Tìm tọa độ ảnh 1 ngôi chùa bất kỳ trong ảnh gốc.
+- bdata = nd.zoom(bmg, (5, 5, 1)): tăng chiều dài và rộng lên 5 lần, kênh màu giữ nguyên.
+- In ảnh mới ra màn hình.
+
+### Bài 5:  
+
+
+
+ 
+
+
 
 
 
