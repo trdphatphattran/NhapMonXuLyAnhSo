@@ -144,6 +144,8 @@ Lưu ý là hình phải có trong thư mục, nếu không có ảnh sẽ khôn
 ![image](https://github.com/user-attachments/assets/ec5c86a9-4804-477a-bc79-63992c475525)  
 ![image](https://github.com/user-attachments/assets/15c97a2d-2b6e-4352-affb-70b3b15187ed)  
 Đây là đoạn code xử lý từng phép biến đổi ảnh.  
+Ví dụ: Người dùng muốn xoay ảnh thì chọn "X", sau đó tiếp tục nhập góc xoay muốn biến đổi, chương trình sẽ trả về ảnh sau khi xoay lên màn hình.  
+
 
 
 
