@@ -136,6 +136,19 @@ Trong bài này, viết chương trình chọn ngôi chùa từ ảnh pagoda.jpg
 - In ảnh mới ra màn hình.
 
 ### Bài 5:  
+Trong bài này, viết chương trình tạo menu khi chọn phím T, X, P, H, C thì hỏi muốn thực hiện trên hình nào từ 3 hình trong thư mục exercise. Người dùng chọn hình nào thì thực hiện phép biến đổi trên hình đó ta làm như sau:  
+![image](https://github.com/user-attachments/assets/9b0a20d5-eb6f-4d40-b269-65d686c5d183)  
+Đây là phần khai báo ra hình ảnh trong thư mục exercise và triển khai các phép biến đổi cho người dùng chọn lựa.  
+![image](https://github.com/user-attachments/assets/0766e3ad-22b6-4eb3-9879-50782986fbfb)  
+Lưu ý là hình phải có trong thư mục, nếu không có ảnh sẽ không thể thực hiện biến đổi.  
+![image](https://github.com/user-attachments/assets/ec5c86a9-4804-477a-bc79-63992c475525)  
+![image](https://github.com/user-attachments/assets/15c97a2d-2b6e-4352-affb-70b3b15187ed)  
+Đây là đoạn code xử lý từng phép biến đổi ảnh.  
+
+
+
+
+
 
 
 
