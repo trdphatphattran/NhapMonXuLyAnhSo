@@ -15,6 +15,30 @@ Tạo hiệu ứng sóng bằng biến đổi tọa độ, Y và X có kích th�
 ![image](https://github.com/user-attachments/assets/d65665e0-6b73-4596-86b7-4741e401ad1f)  
 Áp dụng biến dạng bằng map_coordinates.  
 
+### Bài 2:  
+Trong bài này, chọn quả đu đủ và dưa hấu từ google. Đổi màu đu đủ thành gradient từ đỏ sang xanh lá, và dưa hấu thành gradient từ vàng sang tím. Ghép hai quả lên một nền trong suốt (alpha channel) và lưu dưới dạng PNG ta làm như sau:  
+![image](https://github.com/user-attachments/assets/2e152053-f336-4293-9844-dafe87a8e0d5)  
+Chọn ảnh đu đủ và dưa hấu trong ảnh gốc.  
+![image](https://github.com/user-attachments/assets/7046e6b9-0d12-4bf3-845a-59817f18a5e2)  
+Tạo gradient màu đỏ -> xanh lá cho đu đủ:  
+- Tạo gradient theo chiều dọc.  
+- Đỏ -> xanh lá: đỏ giảm dần, xanh lá tăng dần từ trên xuống dưới.  
+- Áp dụng gradient bằng cách nhân từng pixel của đu đủ với màu tương ứng trong gradient1.  
+
+![image](https://github.com/user-attachments/assets/f8fa5b22-1ed2-4d03-967e-fbfcf8f76769)  
+Tạo gradient vàng -> tím cho dưa hấu:  
+- Tạo gradient theo chiều ngang.  
+- Vàng (255,255,0) → Tím (128,0,255).
+- Áp dụng gradient bằng cách nhân từng pixel của dưa hấu với màu tương ứng trong gradient2.
+
+![image](https://github.com/user-attachments/assets/8a1da8fb-bc2d-46f4-a7a6-127eaa335fb3)  
+Tạo nền trong suốt và ghép ảnh.  
+
+
+
+
+
+
 
 
 
