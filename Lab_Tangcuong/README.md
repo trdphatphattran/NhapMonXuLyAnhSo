@@ -79,7 +79,31 @@ Chọn thư mục chứa ảnh và các phép biến đổi ảnh.
 Hình phải có sẵn trong thư mục, nếu không thì không thể biến đổi ảnh.  
 ![image](https://github.com/user-attachments/assets/4acf564e-e1c1-48d2-9e6d-31a0b64fa0d5)  
 Đây là các phép biến đổi ảnh cho người dùng lựa chọn.  
-Ví dụ: Người dùng chọn W (uốn cong ảnh), sau đó nhập vào biên độ sóng muốn uốn cong, sau khi nhập xong sẽ xử lý và trả về hình sau biến đổi.  
+Ví dụ: Người dùng chọn W (uốn cong ảnh), sau đó nhập vào biên độ sóng muốn uốn cong, sau khi nhập xong sẽ xử lý và trả về hình sau biến đổi.
+
+## Hướng dẫn  
+### 1. Cài đặt môi trường  
+Cài python, sau đó cài các thư viện:  
+Dùng tổ hợp phím: Windows + R + cmd.  
+- pip install imageio.
+- pip install matplotlib.
+- pip install scipy.
+
+### 2. Chạy notebook  
+- Mở Jupyter Notebook trên VSCode.
+- Code từng bài và chạy để xem kết quả.
+- Nếu xảy ra lỗi như code sai, không có ảnh, chưa tải thư viện -> Không hiển thị kết quả.
+
+### 3. Tùy chỉnh tham số  
+Ví dụ:  
+- Nhập tọa độ cắt ảnh bất kỳ trong ảnh lớn.
+- Nhập tọa độ tịnh tiến ảnh.
+- Nhập tỉ lệ thay đổi kích thước ảnh.
+- Nhập góc xoay ảnh.
+
+## Tài liệu tham khảo  
+- Bài giảng Nhập môn Xử lý ảnh số - Van Lang University.
+- Chương 6 - Sách Digital Image Processing – Gonzalez & Woods.
 
 
 
