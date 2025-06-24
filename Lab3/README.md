@@ -6,7 +6,7 @@ Môn học: Nhập môn Xử lý ảnh số
 GVHD: Đỗ Hữu Quân  
 Năm học: 2024 - 2025  
 ## Mục tiêu bài học  
-- Viết được chương trình chọn đối tượng trong ảnh
+- Viết được chương trình chọn đối tượng trong ảnh  
 - Viết được chương trình tịnh tiến ảnh
 - Viết được chương trình thay đổi kích thước ảnh
 - Viết được chương trình xoay ảnh
