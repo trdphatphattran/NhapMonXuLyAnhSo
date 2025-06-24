@@ -152,6 +152,31 @@ Lưu ý là hình phải có trong thư mục, nếu không có ảnh sẽ khôn
 Đây là đoạn code xử lý từng phép biến đổi ảnh.  
 Ví dụ: Người dùng muốn xoay ảnh thì chọn "X", sau đó tiếp tục nhập góc xoay muốn biến đổi, chương trình sẽ trả về ảnh sau khi xoay lên màn hình.  
 
+## Hướng dẫn  
+### 1. Cài đặt môi trường  
+Cài python, sau đó cài các thư viện:  
+Dùng tổ hợp phím: Windows + R + cmd.  
+- pip install imageio.
+- pip install matplotlib.
+- pip install scipy.
+
+### 2. Chạy notebook  
+- Mở Jupyter Notebook trên VSCode.
+- Code từng bài và chạy để xem kết quả.
+- Nếu xảy ra lỗi như code sai, không có ảnh, chưa tải thư viện -> Không hiển thị kết quả.
+
+### 3. Tùy chỉnh tham số  
+Ví dụ:  
+- Nhập tọa độ cắt ảnh bất kỳ trong ảnh lớn.
+- Nhập tọa độ tịnh tiến ảnh.
+- Nhập tỉ lệ thay đổi kích thước ảnh.
+- Nhập góc xoay ảnh.
+
+## Tài liệu tham khảo  
+- Bài giảng Nhập môn Xử lý ảnh số - Van Lang University.
+- Chương 6 - Sách Digital Image Processing – Gonzalez & Woods.
+
+
 
 
 
