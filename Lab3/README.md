@@ -30,8 +30,7 @@ Giải thích:
 
 ### 2. Tịnh tiến đơn  
 Là di chuyển toàn bộ ảnh theo một hướng cố định.  
-#### Công thức tịnh tiến:  
-(x, y) --> (x', y') = (x + dx, y + dy)  
+#### Công thức tịnh tiến:  (x, y) --> (x', y') = (x + dx, y + dy)  
 Trong đó:  
 - x, y: Tọa độ điểm ban đầu.  
 - x', y': Tọa độ điểm sau tịnh tiến.  
@@ -45,8 +44,7 @@ Giải thích:
 
 ### 3. Thay đổi kích thước ảnh  
 Là tăng hoặc giảm không gian ảnh.  
-#### Công thức:  
-Kích thước mới = Kích thước cũ * Chỉ số zoom.  
+#### Công thức:  Kích thước mới = Kích thước cũ * Chỉ số zoom.  
 Code chính:  
 ![image](https://github.com/user-attachments/assets/a5ee9104-60df-4cca-9da8-4218910b50bd)  
 Giải thích:  
@@ -57,8 +55,7 @@ Cho ảnh gốc có giá trị data.shape = [height, width, channels].
 
 ### 4. Xoay ảnh  
 Là xoay toàn bộ ảnh sang một góc cố định.  
-Công thức:  
-rotate(image, degree)  
+#### Công thức:  rotate(image, degree)  
 Trong đó:  
 - image: ảnh trong bộ nhớ.
 - degree: góc xoay.  
@@ -95,8 +92,7 @@ Giải thích:
 
 ### 7. Biến đổi chung (Generic Transformation)  
 Dùng khi ta muốn biến đổi các ảnh chung phép toán do người dùng định nghĩa.  
-Công thức:  
-I1 (y, x) = I2 (fy(y, x), fx(y, x)).  
+#### Công thức:  I1 (y, x) = I2 (fy(y, x), fx(y, x)).  
 Trong đó:  
 - (y, x): Tọa độ điểm ban đầu.  
 - fy(y, x): Hàm ánh xạ ngược theo trục Y.  
