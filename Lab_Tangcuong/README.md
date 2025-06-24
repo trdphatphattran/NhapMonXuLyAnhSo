@@ -72,13 +72,13 @@ Trong bài này, Tạo một chương trình menu tương tác cho phép ngườ
 - Phóng to/thu nhỏ (hỏi hệ số zoom).  
 - Làm mờ Gaussian (hỏi giá trị sigma).  
 - Biến đổi sóng (hỏi biên độ sóng).   
-Người dùng chọn ảnh từ 3 ảnh bất kì
-![image](https://github.com/user-attachments/assets/e7e6135e-99ec-48fb-897f-24b4969a883f)
-Chọn thư mục chứa ảnh và các phép biến đổi ảnh.
-![image](https://github.com/user-attachments/assets/e4d61f36-8bf0-4e8a-befa-8451d0c9fd27)
-Hình phải có sẵn trong thư mục, nếu không thì không thể biến đổi ảnh.
-![image](https://github.com/user-attachments/assets/4acf564e-e1c1-48d2-9e6d-31a0b64fa0d5)
-Đây là các phép biến đổi ảnh cho người dùng lựa chọn.
+Người dùng chọn ảnh từ 3 ảnh bất kì  
+![image](https://github.com/user-attachments/assets/e7e6135e-99ec-48fb-897f-24b4969a883f)  
+Chọn thư mục chứa ảnh và các phép biến đổi ảnh.  
+![image](https://github.com/user-attachments/assets/e4d61f36-8bf0-4e8a-befa-8451d0c9fd27)  
+Hình phải có sẵn trong thư mục, nếu không thì không thể biến đổi ảnh.  
+![image](https://github.com/user-attachments/assets/4acf564e-e1c1-48d2-9e6d-31a0b64fa0d5)  
+Đây là các phép biến đổi ảnh cho người dùng lựa chọn.  
 Ví dụ: Người dùng chọn W (uốn cong ảnh), sau đó nhập vào biên độ sóng muốn uốn cong, sau khi nhập xong sẽ xử lý và trả về hình sau biến đổi.  
 
 
