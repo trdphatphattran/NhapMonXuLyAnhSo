@@ -83,13 +83,25 @@ b ∈ B: Duyệt qua tất cả các phần tử trong nhân B.
 ![image](https://github.com/user-attachments/assets/08d2a6e7-6d2d-4967-8149-36c44ea654a0)  
 Đây là phép dãn ảnh với số lần lặp là 50.  
 
-
-
-
-
-
-
 #### 2.3.2  Sử dụng binary_opening  
+Binary_opening là sự kết hợp giữa dilation và erosion.  
+##### Công thức  
+![image](https://github.com/user-attachments/assets/1cf83fd3-2445-48e3-bfc8-cb3bf6d4c7d2)  
+A: Ảnh nhị phân gốc.  
+B: Structuring element (nhân).  
+⊖: phép erosion – thu nhỏ vùng trắng.  
+⊕: phép dilation – dãn vùng trắng.  
+∘: phép opening.  
+##### Code chính  
+![image](https://github.com/user-attachments/assets/d0fdd1fb-6cdb-48b3-9dcb-84a0e337085b)  
+Đây là phép mở ảnh với số lần lặp là 25 trên ma trận 3x3 có hình dấu cộng.  
+
+
+
+
+
+
+
 
 #### 2.3.3 Sử dụng binary_erosion  
 
