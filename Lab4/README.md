@@ -144,6 +144,7 @@ Dùng tổ hợp phím: Windows + R + cmd.
 - Code từng bài và chạy để xem kết quả.
 - Nếu xảy ra lỗi như code sai, không có ảnh, chưa tải thư viện -> Không hiển thị kết quả.
 ### 3. Tùy chỉnh tham số  
+- Có thể thay đổi iterations, offset, hình ảnh,... để xem các kết quả khác nhau.  
 
 ## Tài liệu tham khảo  
 - Bài giảng nhập môn Xử lý ảnh số - Van Lang University.
