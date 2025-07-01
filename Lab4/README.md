@@ -25,6 +25,13 @@ t: Ngưỡng phân tích mức xám.
 σ₁²(t): Phương sai của lớp 1.  
 σw²(t): Phương sai trong lớp (mục tiêu cần giảm).  
 
+##### Code chính  
+![image](https://github.com/user-attachments/assets/fd3759a1-8746-4c6e-a257-b52bd36eb670)  
+Trong đó:  
+- a: Ảnh gốc đã chuyển sang ảnh xám.
+- threshold_otsu(a): Áp dụng thuật toán Otsu để tự động tìm ngưỡng tối ưu thres.
+- thres: Là ngưỡng xám mà Otsu chọn.  
+
 #### 2.1.2 Phương pháp Adaptive Thresholding  
 Cải tiến phân vùng chính xác hơn Otsu. Chia ảnh thành nhiều ảnh nhỏ và tính threshold cho từng ảnh nhỏ.  
 ##### Công thức  
