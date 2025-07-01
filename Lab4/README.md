@@ -69,7 +69,25 @@ Xem ảnh như một hàm cường độ sáng f(x, y):
 
 ### 2.3 Biến đổi đối tượng trong ảnh  
 Dilation cho phép các pixel ở foreground của 1 ảnh có thể соco giãn.  
-#### 2.3.1  Sử dụng binary_dilation
+#### 2.3.1  Sử dụng binary_dilation  
+Binary_dilation là phép dãn cho phép mở rộng vùng trắng trong ảnh nhị phân.  
+##### Công thức  
+![image](https://github.com/user-attachments/assets/d2c1ed7c-1c8e-4c26-b8ca-6969f27d1c4d)  
+A: Ảnh nhị phân gốc.  
+B: Structuring element (nhân).  
+A ⊕ B: Kết quả của phép dãn A theo nhân B.  
+Aᵦ: Tập A được tịnh tiến bởi phần tử b trong nhân B.  
+U: Hợp tất cả các tập con Aᵦ.  
+b ∈ B: Duyệt qua tất cả các phần tử trong nhân B.  
+##### Code chính  
+![image](https://github.com/user-attachments/assets/08d2a6e7-6d2d-4967-8149-36c44ea654a0)  
+Đây là phép dãn ảnh với số lần lặp là 50.  
+
+
+
+
+
+
 
 #### 2.3.2  Sử dụng binary_opening  
 
