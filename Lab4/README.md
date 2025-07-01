@@ -101,17 +101,25 @@ Binary_erosion là thu nhỏ vùng trắng, xóa nhiễu trắng nhỏ và tách
 ##### Công thức  
 ![image](https://github.com/user-attachments/assets/6deedfc3-5939-4ffb-be09-f21f6f139eff)  
 A: Ảnh nhị phân gốc.  
-B: Structuring element (nhân).
+B: Structuring element (nhân).  
 B_z: Dịch nhân B đến vị trí z.  
 A ⊖ B: Tập hợp tất cả điểm z mà khi đặt nhân B tại z, nó hoàn toàn nằm trong vùng trắng của A.  
 ##### Code chính  
 ![image](https://github.com/user-attachments/assets/8f04571d-c867-4f8a-a563-2d564753910c)  
 Đây là phép ăn mòn ảnh với số lần lặp là 50 (làm co vùng trắng mạnh).  
 
-
-
-
 #### 2.3.4 Sử dụng binary_closing  
+Binary_closing là phép đóng ảnh (ngược lại với binary_opening).  
+##### Công thức  
+![image](https://github.com/user-attachments/assets/e2151ec2-38b9-42e9-b41e-58ea5c55c44a)  
+A: Ảnh nhị phân gốc.  
+B: Structuring element (nhân).  
+⊕: phép dilation – dãn.  
+⊖: phép erosion – ăn mòn.  
+A ∙ B: kết quả của phép closing (đóng ảnh).  
+##### Code chính  
+![image](https://github.com/user-attachments/assets/e2a6f350-a5a6-497c-b59f-17ddb15f32e1)  
+Đây là phép đóng ảnh với số lần lặp là 50.  
 
 ## Phần 2: Bài tập  
 ### Bài 1  
