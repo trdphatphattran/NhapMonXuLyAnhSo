@@ -35,6 +35,24 @@ Trong đó:
 #### 2.1.2 Phương pháp Adaptive Thresholding  
 Cải tiến phân vùng chính xác hơn Otsu. Chia ảnh thành nhiều ảnh nhỏ và tính threshold cho từng ảnh nhỏ.  
 ##### Công thức  
+T(x, y) = mean(Nₓ,ᵧ) - C.  
+
+T(x, y): Ngưỡng được đặt tại vị trí pixel.  
+Nₓ,ᵧ: Vùng lân cận xung quanh điểm (x, y).  
+mean(Nₓ,ᵧ): Trung bình giá trị xám vùng lân cận.  
+C: giá trị offset để điều chỉnh ngưỡng.  
+
+##### Code chính
+![image](https://github.com/user-attachments/assets/75f4bb99-44f7-404c-b6b8-d7b636898b01)  
+Trong đó:  
+- a: Ảnh đầu vào.
+- 39: Kích thước pixel dùng để tính ngưỡng tại mỗi điểm.  
+- offset = 10: trừ thêm 10 để làm ngưỡng nhạy hơn.
+- b: ma trận ngưỡng cục bộ tại từng vị trí ảnh.
+
+
+
+
 
 
 
