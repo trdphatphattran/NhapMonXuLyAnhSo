@@ -15,6 +15,8 @@ Phân vùng ảnh là quá trình chia ảnh thành nhiều vùng có chung đ�
 ### 2.1 Phân vùng theo histogram  
 Một ngưỡng được xác định dựa theo histogram của ảnh. Mỗi pixel trong ảnh được so sánh với ngưỡng, nếu giá trị pixel nhỏ hơn ngưỡng, thì pixel trong phân vùng được gán giá trị 0. Ngược lại, gán giá trị 1.  
 #### 2.1.1 Phương pháp otsu  
+Otsu là một phương pháp tự động tìm ngưỡng để chuyển ảnh xám thành ảnh nhị phân.  
+![Otsu Formula](https://latex.codecogs.com/png.image?\dpi{120}&space;\sigma_b^2(t)=\omega_0(t)\cdot\omega_1(t)\cdot\left[\mu_0(t)-\mu_1(t)\right]^2)  
 
 #### 2.1.2 Phương pháp Adaptive Thresholding  
 Cải tiến phân vùng chính xác hơn Otsu. Chia ảnh thành nhiều ảnh nhỏ và tính threshold cho từng ảnh nhỏ.  
