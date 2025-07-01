@@ -60,8 +60,8 @@ Xem ảnh như một hàm cường độ sáng f(x, y):
 - Tìm các minima địa phương trong ảnh xám hoặc ảnh biến đổi khoảng cách (distanceTransform).  
 - Mỗi minima được gán nhãn như một "hạt giống" (marker).  
 - Từ các marker đó, thuật toán lan rộng vùng lân cận:  
-+ Với mỗi điểm ảnh chưa được gán nhãn, xét điểm ảnh lân cận đã gán nhãn với giá trị thấp nhất.  
-+ Gán theo hướng tăng dần độ cao.
+- + Với mỗi điểm ảnh chưa được gán nhãn, xét điểm ảnh lân cận đã gán nhãn với giá trị thấp nhất.  
+- + Gán theo hướng tăng dần độ cao.
 - Khi vùng lan ra và chạm nhau, đánh dấu biên vùng.
 ##### Code chính  
 ![image](https://github.com/user-attachments/assets/ba67cba3-f15d-4125-8430-db19c21e238c)  
