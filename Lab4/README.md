@@ -54,8 +54,8 @@ Trong đó:
 Một region là một nhóm các pixel có cùng thuộc tính.  
 ##### Ý tưởng  
 Xem ảnh như một hàm cường độ sáng f(x, y):
-- f(x, y) càng nhỏ -> càng thấp.
-- f(x, y) càng lớn -> càng cao.  
+- f(x, y) càng nhỏ -> điểm ảnh càng thấp.
+- f(x, y) càng lớn -> điểm ảnh càng cao.  
 ##### Thuật toán  
 - Tìm các minima địa phương trong ảnh xám hoặc ảnh biến đổi khoảng cách (distanceTransform).  
 - Mỗi minima được gán nhãn như một "hạt giống" (marker).  
