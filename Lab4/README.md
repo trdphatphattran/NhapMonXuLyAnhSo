@@ -96,14 +96,20 @@ B: Structuring element (nhân).
 ![image](https://github.com/user-attachments/assets/d0fdd1fb-6cdb-48b3-9dcb-84a0e337085b)  
 Đây là phép mở ảnh với số lần lặp là 25 trên ma trận 3x3 có hình dấu cộng.  
 
-
-
-
-
-
-
-
 #### 2.3.3 Sử dụng binary_erosion  
+Binary_erosion là thu nhỏ vùng trắng, xóa nhiễu trắng nhỏ và tách các vật thể dính nhau trong ảnh nhị phân.  
+##### Công thức  
+![image](https://github.com/user-attachments/assets/6deedfc3-5939-4ffb-be09-f21f6f139eff)  
+A: Ảnh nhị phân gốc.  
+B: Structuring element (nhân).
+B_z: Dịch nhân B đến vị trí z.  
+A ⊖ B: Tập hợp tất cả điểm z mà khi đặt nhân B tại z, nó hoàn toàn nằm trong vùng trắng của A.  
+##### Code chính  
+![image](https://github.com/user-attachments/assets/8f04571d-c867-4f8a-a563-2d564753910c)  
+Đây là phép ăn mòn ảnh với số lần lặp là 50 (làm co vùng trắng mạnh).  
+
+
+
 
 #### 2.3.4 Sử dụng binary_closing  
 
