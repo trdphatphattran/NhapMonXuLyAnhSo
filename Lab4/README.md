@@ -50,15 +50,22 @@ Trong đó:
 - offset = 10: trừ thêm 10 để làm ngưỡng nhạy hơn.
 - b: ma trận ngưỡng cục bộ tại từng vị trí ảnh.
 
-
-
-
-
-
-
-
 ### 2.2 Phân vùng theo region  
 Một region là một nhóm các pixel có cùng thuộc tính.  
+##### Ý tưởng  
+Xem ảnh như một hàm cường độ sáng f(x, y):
+- f(x, y) càng nhỏ -> càng thấp.
+- f(x, y) càng lớn -> càng cao.  
+##### Thuật toán  
+- Tìm các minima địa phương trong ảnh xám hoặc ảnh biến đổi khoảng cách (distanceTransform).  
+- Mỗi minima được gán nhãn như một "hạt giống" (marker).  
+- Từ các marker đó, thuật toán lan rộng vùng lân cận:  
++ Với mỗi điểm ảnh chưa được gán nhãn, xét điểm ảnh lân cận đã gán nhãn với giá trị thấp nhất.  
++ Gán theo hướng tăng dần độ cao.
+- Khi vùng lan ra và chạm nhau, đánh dấu biên vùng.
+##### Code chính  
+![image](https://github.com/user-attachments/assets/ba67cba3-f15d-4125-8430-db19c21e238c)  
+Đây là nơi thuật toán thực sự phân vùng ảnh dựa vào các marker đã chuẩn bị.  
 
 ### 2.3 Biến đổi đối tượng trong ảnh  
 Dilation cho phép các pixel ở foreground của 1 ảnh có thể соco giãn.  
