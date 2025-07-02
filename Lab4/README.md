@@ -161,13 +161,42 @@ Cắt ảnh Quảng trường Lâm Viên trong ảnh lớn dalat.
 ![image](https://github.com/user-attachments/assets/37eb0720-d9d2-4bef-bf1f-031b947de683)  
 Đây là coordinate mapping tạo hiệu ứng biến dạng ngẫu nhiên trên ảnh nhị phân, bằng cách lấy lại các giá trị pixel từ các vị trí bị dịch chuyển nhẹ so với gốc. 
 
-
-
-
-
-
-
 ### Bài 4  
+Tạo menu như hình  
+![image](https://github.com/user-attachments/assets/dd1044eb-cbfa-48db-9e1c-a0565f7ad50e)  
+Viết chương trình cho phép người dùng nhập chức năng muốn xử lý (có thể chọn 1 hoặc kết hợp 2 chức năng của 2 phần), ta làm như sau:  
+
+![image](https://github.com/user-attachments/assets/c9f52105-98cf-4461-9dd9-a30e9c5294f7)  
+Chọn ảnh dalat.jpg.  
+![image](https://github.com/user-attachments/assets/845b3820-4df1-4270-bbbd-3c5d87ae696e)  
+Đây là các hàm biến đổi geometric_transformation gồm:  
+- coordinate mapping: Thay đổi vị trí các điểm ảnh theo ánh xạ tọa độ mới.
+- rotate: Xoay ảnh.
+- scale: Phóng to hoặc thu nhỏ ảnh.
+- shift: Tịnh tiến ảnh.
+
+![image](https://github.com/user-attachments/assets/07cc14fb-be17-4070-853f-ce4e5ac34377)  
+Đây là các hàm biến đổi segment gồm:  
+- adaptive thresholding: Cải tiến phân vùng. Chia ảnh thành nhiều ảnh nhỏ và tính threshold cho từng ảnh nhỏ.
+- binary_dilation: Phép dãn cho phép mở rộng vùng trắng trong ảnh nhị phân.
+- binary_erosion: Thu nhỏ vùng trắng, xóa nhiễu trắng nhỏ và tách các vật thể dính nhau trong ảnh nhị phân.
+- otsu: Tự động tìm ngưỡng để chuyển ảnh xám thành ảnh nhị phân.
+
+![image](https://github.com/user-attachments/assets/a2826c88-f5b4-44ea-ae15-48fe32c6fe30)  
+Menu các phép biến đổi cho người dùng chọn.  
+![image](https://github.com/user-attachments/assets/93688512-390f-419b-a96d-e1d78555caef)  
+![image](https://github.com/user-attachments/assets/f6b51155-1710-4075-899f-3e0c7a1e665b)  
+Đây là code xử lý các lựa chọn của người dùng.  Sau đó là in ra màn hình ảnh sau khi biến đổi.  
+
+
+
+
+
+
+
+
+
+
 
 ## Hướng dẫn  
 ### 1. Cài đặt môi trường  
