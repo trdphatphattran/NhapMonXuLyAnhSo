@@ -134,11 +134,21 @@ Dịch ảnh sang phải 100px.
 ![image](https://github.com/user-attachments/assets/ff5f8ce0-7643-43c2-8978-9ffb031ff966)  
 Chuyển các pixel về khoảng [0, 1], sau đó so sánh với 0.3. Nếu pixel nào sáng hơn 0.3 thì là trắng, còn lại đen.  
 
-
-
-
-
 ### Bài 2  
+Trong bài này, chọn ảnh Hồ Xuân Hương trong dalat.jpg. Xoay ảnh 1 góc 45 độ, dùng phương pháp Adaptive Thresholding với ngưỡng 60 và lưu ảnh vào máy ta làm như sau:  
+
+![image](https://github.com/user-attachments/assets/c4269296-03b9-4b1c-a768-89c077cfc12f)  
+Chọn ảnh từ thư mục exercise.  
+![image](https://github.com/user-attachments/assets/7c5c757f-c83d-4ddf-a068-4abe915f7f10)  
+Cắt ảnh Hồ Xuân Hương trong ảnh lớn dalat và xoay ảnh 45 độ.  
+![image](https://github.com/user-attachments/assets/040cf540-47ee-4457-ad79-4a9966a23203)  
+Tính ngưỡng riêng cho từng pixel, dịch ngương xuống 10 đơn vị để làm rõ ảnh hơn.  
+![image](https://github.com/user-attachments/assets/58ba5bb0-6e30-4b18-bfaf-db411a1065f9)  
+Nếu giá trị > ngưỡng thì ảnh trắng, ngược lại ảnh đen.  
+
+
+
+
 
 ### Bài 3  
 
