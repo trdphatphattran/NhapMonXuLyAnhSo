@@ -146,11 +146,26 @@ Tính ngưỡng riêng cho từng pixel, dịch ngương xuống 10 đơn vị �
 ![image](https://github.com/user-attachments/assets/58ba5bb0-6e30-4b18-bfaf-db411a1065f9)  
 Nếu giá trị > ngưỡng thì ảnh trắng, ngược lại ảnh đen.  
 
-
-
-
-
 ### Bài 3  
+Trong bài này, chọn ảnh Quảng trường Lâm Viên trong ảnh dalat.jpg. Dùng phương pháp Coordinate Mapping và Binary Closing cho ảnh, sau đó lưu vào máy ta làm như sau:  
+
+![image](https://github.com/user-attachments/assets/d0e4f960-eb97-46b7-81dd-1d72821b8092)  
+Chọn ảnh từ thư mục exercise.  
+![image](https://github.com/user-attachments/assets/69037706-7d6f-4509-81ee-7190d7e4a841)  
+Cắt ảnh Quảng trường Lâm Viên trong ảnh lớn dalat.  
+![image](https://github.com/user-attachments/assets/7bde9879-61e6-49da-8fb4-49b18466de1b)  
+Đây là binary_closing với số lần lặp là 50 để làm mịn ảnh nhị phân:  
+- Nối các vùng trắng gần nhau.
+- Xóa chi tiết nhiễu nhỏ.
+
+![image](https://github.com/user-attachments/assets/37eb0720-d9d2-4bef-bf1f-031b947de683)  
+Đây là coordinate mapping tạo hiệu ứng biến dạng ngẫu nhiên trên ảnh nhị phân, bằng cách lấy lại các giá trị pixel từ các vị trí bị dịch chuyển nhẹ so với gốc. 
+
+
+
+
+
+
 
 ### Bài 4  
 
