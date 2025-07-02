@@ -123,6 +123,20 @@ A ∙ B: kết quả của phép closing (đóng ảnh).
 
 ## Phần 2: Bài tập  
 ### Bài 1  
+Trong bài này, chọn ảnh Langbiang trong ảnh dalat.jpg. Tịnh tiến sang phải 100px, sử dụng phương pháp otsu để phân vùng Langbiang theo ngưỡng 0.3 và lưu ảnh vào máy ta làm như sau:  
+
+![image](https://github.com/user-attachments/assets/c2e1b51c-c924-4273-8ab5-f76b5202d0ba)  
+Chọn ảnh từ thư mục exercise.  
+![image](https://github.com/user-attachments/assets/e53b6a7a-58de-4262-8a22-bea4448d9da9)  
+Cắt ảnh Langbiang trong ảnh lớn dalat.  
+![image](https://github.com/user-attachments/assets/3a53fc0c-3838-42c5-b094-30dd14d040c4)  
+Dịch ảnh sang phải 100px.  
+![image](https://github.com/user-attachments/assets/ff5f8ce0-7643-43c2-8978-9ffb031ff966)  
+Chuyển các pixel về khoảng [0, 1], sau đó so sánh với 0.3. Nếu pixel nào sáng hơn 0.3 thì là trắng, còn lại đen.  
+
+
+
+
 
 ### Bài 2  
 
