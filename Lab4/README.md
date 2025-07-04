@@ -11,7 +11,9 @@ Năm học: 2024 - 2025
 - Viết được chương trình thay đổi ảnh.
 ## Giới thiệu  
 Phân vùng ảnh là quá trình chia ảnh thành nhiều vùng có chung đặc tính.  
-## Phần 1: Viết chương trình phân vùng ảnh  
+## Phần 1: Cài đặt thư viện  
+- pip install opencv-python.  
+## Phần 2: Viết chương trình phân vùng ảnh  
 ### 2.1 Phân vùng theo histogram  
 Một ngưỡng được xác định dựa theo histogram của ảnh. Mỗi pixel trong ảnh được so sánh với ngưỡng, nếu giá trị pixel nhỏ hơn ngưỡng, thì pixel trong phân vùng được gán giá trị 0. Ngược lại, gán giá trị 1.  
 #### 2.1.1 Phương pháp otsu  
