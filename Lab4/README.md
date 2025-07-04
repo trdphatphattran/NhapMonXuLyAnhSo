@@ -188,16 +188,6 @@ Menu các phép biến đổi cho người dùng chọn.
 ![image](https://github.com/user-attachments/assets/f6b51155-1710-4075-899f-3e0c7a1e665b)  
 Đây là code xử lý các lựa chọn của người dùng.  Sau đó là in ra màn hình ảnh sau khi biến đổi.  
 
-
-
-
-
-
-
-
-
-
-
 ## Hướng dẫn  
 ### 1. Cài đặt môi trường  
 Cài python, sau đó cài các thư viện:  
