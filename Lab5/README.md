@@ -15,6 +15,18 @@ Gán nhãn dùng để phân biệt các đối tượng khác nhau trong ảnh.
 - pip install opencv-python.
 ## Phần 2: Viết chương trình gán nhãn ảnh  
 ### 2.1 Gán nhãn ảnh  
+Gán nhãn ảnh là quá trình gắn thông tin mô tả cho một hoặc nhiều đối tượng trong ảnh.  
+Gán nhãn ảnh nhầm mục đích:  
+- Cải thiện độ chính xác của AI.
+- Tăng tốc độ học máy.
+- Đảm bảo tính nhất quán.
+- Phát hiện lỗi sớm.
+
+#### Code chính:  
+![image](https://github.com/user-attachments/assets/24a2302b-b884-4ee4-9f1f-dd3b3b33479a)  
+- Tìm ngưỡng nhị phân tự động bằng phương pháp Otsu.
+- Gán nhãn cho từng vùng liên thông trong ảnh nhị phân b.  
+- d là danh sách các vùng (region), mỗi vùng có thông tin riêng như "Area, Centroid, BoundingBox".
 
 ### 2.2 Dò tìm cạnh theo chiều dọc  
 
