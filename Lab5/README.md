@@ -79,24 +79,47 @@ Mục đích:
 - Phát hiện biên, lằn đường.
 - Phát hiện hình học: Hình vuông, tam giác, ...
 
-#### Công thức:  
+##### Công thức:  
 ρ = x · cos(θ) + y · sin(θ)  
 Trong đó:  
 - x, y: Tọa độ điểm ảnh.
 - θ: Góc quay.
 - ρ: Khoảng cách từ tọa độ đến đường thẳng.
 
-#### Code chính:  
+##### Code chính:  
 ![image](https://github.com/user-attachments/assets/1b97e48f-b049-4b27-b677-1f3e182d601b)  
-R: Bán kính tối đa.  
-90: Số góc.  
+- R: Bán kính tối đa.  
+- 90: Số góc.  
 
 ![image](https://github.com/user-attachments/assets/7458939c-0a47-4f8b-bb06-53d5a64eb862)  
-Đây là vị trí thuât toán dò đường thẳng.  
+- Đây là vị trí thuật toán dò đường thẳng, nơi tìm điểm có pixel lớn nhất, tìm tọa độ (x, y) của pixel lớn nhất và tính các giá trị ρ tương ứng cho từng góc θ.  
 
-#### 2.5.2 Dò tìm đường tròn trong ảnh
+#### 2.5.2 Dò tìm đường tròn trong ảnh  
+Dò tìm đường tròn trong ảnh là quá trình phát hiện các hình tròn có trong ảnh.  
+Mục đích:  
+- Nhận diện vật thể có hình tròn.
+- Nhận diện hình học.
+- Chuẩn bị cho phân tích ảnh kỹ thuật hoặc sinh học.
+
+##### Công thức:  
+(x − a)² + (y − b)² = r²  
+Trong đó:  
+- (x, y): Tọa độ một điểm trên đường tròn.  
+- (a, b): Tọa độ tâm đường tròn.  
+- r: Bán kính.
+
+##### Code chính:  
+![image](https://github.com/user-attachments/assets/f6aaff5c-af5a-499b-a518-ba61ad5f6ce1)  
+- Đây là vị trí thuật toán tìm đường tròn, dò tìm các điểm góc trong ảnh.  
+- Mục tiêu là phát hiện các điểm đặc trưng của ảnh.  
 
 ### 2.6 Image matching  
+Image matching là tìm điểm tương đồng giữa 2 ảnh.  
+Mục đích: 
+- Tìm điểm cần so sánh (Harris Corner Detector).
+- Xem xét vùng chọn hình chữ nhật xung quanh những điểm cần so sánh.
+- Tính mô tả đặc trưng cục bộ cho mỗi điểm của ảnh.
+- Kiểm tra độ tương đồng giữa 2 ảnh.  
 
 ## Hướng dẫn  
 ### 1. Cài đặt môi trường  
@@ -112,7 +135,7 @@ Dùng tổ hợp phím: Windows + R + cmd.
 - Code từng bài và chạy để xem kết quả.
 - Nếu xảy ra lỗi như code sai, không có ảnh, chưa tải thư viện -> Không hiển thị kết quả.
 ### 3. Tùy chỉnh tham số  
-- Có thể thay đổi iterations, offset, hình ảnh,... để xem các kết quả khác nhau.  
+- Có thể thay đổi hình, thay đổi k trong corner_harris, điều chỉnh gamma,... để xem các kết quả khác nhau.  
 
 ## Tài liệu tham khảo  
 - Bài giảng nhập môn Xử lý ảnh số - Van Lang University.
