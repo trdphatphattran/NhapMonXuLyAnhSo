@@ -74,6 +74,25 @@ Mục đích:
 
 ### 2.5 Dò tìm hình dạng cụ thể trong ảnh với Hough Transform  
 #### 2.5.1 Dò tìm đường thẳng trong ảnh  
+Dò tìm ảnh thẳng trong ảnh là quá trình xác định các đường thẳng xuất hiện trong ảnh.  
+Mục đích:  
+- Phát hiện biên, lằn đường.
+- Phát hiện hình học: Hình vuông, tam giác, ...
+
+#### Công thức:  
+ρ = x · cos(θ) + y · sin(θ)  
+Trong đó:  
+- x, y: Tọa độ điểm ảnh.
+- θ: Góc quay.
+- ρ: Khoảng cách từ tọa độ đến đường thẳng.
+
+#### Code chính:  
+![image](https://github.com/user-attachments/assets/1b97e48f-b049-4b27-b677-1f3e182d601b)  
+R: Bán kính tối đa.  
+90: Số góc.  
+
+![image](https://github.com/user-attachments/assets/7458939c-0a47-4f8b-bb06-53d5a64eb862)  
+Đây là vị trí thuât toán dò đường thẳng.  
 
 #### 2.5.2 Dò tìm đường tròn trong ảnh
 
