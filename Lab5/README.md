@@ -53,6 +53,24 @@ Tính đạo hàm Sobel theo 2 trục:
 - axis = 1: Tính độ biến thiên theo chiều ngang (đạo hàm theo cột) -> phát hiện biên dọc.  
 
 ### 2.4 Xác định góc của đối tượng  
+Xác định góc của đối tượng là quá trình tìm ra các điểm đặc trưng nằm tại góc trong ảnh, nơi có sự thay đổi mạnh về hướng hoặc giao nhau giữa hai biên.  
+Mục đích:  
+- Nhận diện đối tượng trong ảnh.
+- So khớp ảnh.
+- Theo dõi đối tượng.
+
+#### Code chính:  
+![image](https://github.com/user-attachments/assets/1fc56483-5e55-4b45-ad6d-f7306edada35)  
+- Đạo hàm theo trục y và x.
+
+![image](https://github.com/user-attachments/assets/1faf78f0-f68d-40de-bd8a-f73fa0e51c7c)  
+- Tạo các phần tử ma trận của cấu trúc.
+
+![image](https://github.com/user-attachments/assets/439077c9-5e23-4d16-9629-4cf5b89439f9)  
+- Làm mượt các thành phần để ổn định hơn.
+
+![image](https://github.com/user-attachments/assets/9cbf0dee-5b22-4966-b5fe-6c1db7acc28e)  
+- Tính giá trị R cho mỗi pixel -> pixel có R cao là các điểm góc.  
 
 ### 2.5 Dò tìm hình dạng cụ thể trong ảnh với Hough Transform  
 #### 2.5.1 Dò tìm đường thẳng trong ảnh  
