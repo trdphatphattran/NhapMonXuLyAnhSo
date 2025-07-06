@@ -29,6 +29,15 @@ Gán nhãn ảnh nhầm mục đích:
 - d là danh sách các vùng (region), mỗi vùng có thông tin riêng như "Area, Centroid, BoundingBox".
 
 ### 2.2 Dò tìm cạnh theo chiều dọc  
+Dò tìm cạnh theo chiều dọc là quá trình xác định các điểm trong ảnh nơi cường độ pixel thay đổi mạnh theo chiều ngang (tức biên theo chiều dọc).  
+Mục đích:  
+- Làm nổi bật ranh giới.  
+- Giảm thông tin dư thừa, giữ lại các vùng có thay đổi.
+
+#### Code chính:  
+![image](https://github.com/user-attachments/assets/27b1f3de-0116-415e-be08-3dafc596de83)  
+- Dịch toàn bộ ảnh sang phải 1 pixel.
+- abs(data - shifted()): Tính hiệu độ sáng giữa ảnh gốc và ảnh đã dịch -> Làm nổi bật các vị trí có sự thay đổi chiều ngang.  
 
 ### 2.3 Dò tìm cạnh với Sobel Filter  
 
