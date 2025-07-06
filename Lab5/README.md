@@ -39,7 +39,18 @@ Mục đích:
 - Dịch toàn bộ ảnh sang phải 1 pixel.
 - abs(data - shifted()): Tính hiệu độ sáng giữa ảnh gốc và ảnh đã dịch -> Làm nổi bật các vị trí có sự thay đổi chiều ngang.  
 
-### 2.3 Dò tìm cạnh với Sobel Filter  
+### 2.3 Dò tìm cạnh Sobel Filter  
+Dò tìm cạnh Sobel Filter nhằm phát hiện các cạnh, tức là nơi cường độ pixel thay đổi mạnh, bằng cách áp dụng toán tử Sobel theo hai hướng ngang và dọc.  
+Mục đích:  
+- Phát hiện hình dạng vật thể.  
+- Phân đoạn đối tượng.  
+- Hỗ trợ nhận dạng và theo dõi.  
+
+#### Code chính:  
+![image](https://github.com/user-attachments/assets/0f280473-26c5-45b9-b995-ed498388a2b1)  
+Tính đạo hàm Sobel theo 2 trục:  
+- axis = 0: Tính độ biến thiên theo chiều dọc (đạo hàm theo hàng) -> phát hiện biên ngang.
+- axis = 1: Tính độ biến thiên theo chiều ngang (đạo hàm theo cột) -> phát hiện biên dọc.  
 
 ### 2.4 Xác định góc của đối tượng  
 
