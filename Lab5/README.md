@@ -119,7 +119,12 @@ Mục đích:
 - Tìm điểm cần so sánh (Harris Corner Detector).
 - Xem xét vùng chọn hình chữ nhật xung quanh những điểm cần so sánh.
 - Tính mô tả đặc trưng cục bộ cho mỗi điểm của ảnh.
-- Kiểm tra độ tương đồng giữa 2 ảnh.  
+- Kiểm tra độ tương đồng giữa 2 ảnh.
+
+##### Công thức tính độ tương đồng bằng khoảng cách Euclid  
+## Công thức tính khoảng cách Euclid (L2 distance)
+
+distance = sqrt( sum_{i=1}^{n} (d1[i] - d2[i])^2 )
 
 ## Hướng dẫn  
 ### 1. Cài đặt môi trường  
