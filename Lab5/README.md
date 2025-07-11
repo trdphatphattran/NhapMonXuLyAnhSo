@@ -123,6 +123,7 @@ Mục đích:
 
 ##### Công thức tính độ tương đồng bằng khoảng cách Euclid  
 <img width="305" height="111" alt="image" src="https://github.com/user-attachments/assets/e534227c-d283-42fc-ac89-f9f31ffcf212" />  
+
 Trong đó:  
 - d₁: descriptor từ ảnh 1.  
 - d₂: descriptor từ ảnh 2.  
@@ -133,6 +134,7 @@ Trong đó:
 
 ##### Công thức tính độ tương đồng với các cặp có khoảng cách nhỏ nhất  
 <img width="294" height="88" alt="image" src="https://github.com/user-attachments/assets/c00b73fc-d218-4d63-9457-57368f4999d4" />  
+
 Trong đó:  
 - d₁: descriptor của 1 keypoint từ ảnh 1.
 - d₂ʲ: descriptor từ ảnh 2, j chạy qua tất cả keypoints của ảnh 2.
