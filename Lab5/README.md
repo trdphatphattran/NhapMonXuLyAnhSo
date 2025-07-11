@@ -122,9 +122,32 @@ Mục đích:
 - Kiểm tra độ tương đồng giữa 2 ảnh.
 
 ##### Công thức tính độ tương đồng bằng khoảng cách Euclid  
-<img width="305" height="111" alt="image" src="https://github.com/user-attachments/assets/e534227c-d283-42fc-ac89-f9f31ffcf212" />
+<img width="305" height="111" alt="image" src="https://github.com/user-attachments/assets/e534227c-d283-42fc-ac89-f9f31ffcf212" />  
+Trong đó:  
+- d₁: descriptor từ ảnh 1.  
+- d₂: descriptor từ ảnh 2.  
+- n: Số chiều của vector.  
 
+##### Code chính  
+<img width="507" height="51" alt="image" src="https://github.com/user-attachments/assets/addbb8c3-3730-4a41-b4ec-9befd5b4f792" />  
 
+##### Công thức tính độ tương đồng với các cặp có khoảng cách nhỏ nhất  
+<img width="294" height="88" alt="image" src="https://github.com/user-attachments/assets/c00b73fc-d218-4d63-9457-57368f4999d4" />  
+Trong đó:  
+- d₁: descriptor của 1 keypoint từ ảnh 1.
+- d₂ʲ: descriptor từ ảnh 2, j chạy qua tất cả keypoints của ảnh 2.
+
+##### Code chính  
+<img width="497" height="58" alt="image" src="https://github.com/user-attachments/assets/070157a6-37ea-4c06-994d-a2759fc2f995" />  
+
+##### Công thức lọc nhiễu bằng Ransac và Homography  
+###### x' = Hx
+Trong đó:  
+- x, x': Tọa độ tương ứng của các điểm trong 2 ảnh.
+- H: Ma trận 3x3 biểu diễn phép biến đổi hình học.
+
+##### Code chính  
+<img width="731" height="128" alt="image" src="https://github.com/user-attachments/assets/928b1010-2f3d-400f-8cc7-7928ac44e1c7" />  
 
 ## Hướng dẫn  
 ### 1. Cài đặt môi trường  
