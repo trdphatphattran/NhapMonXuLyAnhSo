@@ -24,6 +24,8 @@ Dùng phương pháp Canny để xác dịnh biên, sigma = 3 là tham số xác
 - Viết chương trình đổi màu ảnh từ không gian màu BGR sang một màu ngẫu nhiên (RGB) bằng cách thay đổi các kênh màu một cách ngẫu nhiên, sau đó lưu hình mới vào file a_random_color.jpg.
 <img width="298" height="78" alt="image" src="https://github.com/user-attachments/assets/7818175c-10e5-4e07-8f8e-89b89b9c3e20" />
 
+Gán số thứ tự cho từng kênh màu trong ảnh RGB --> Tạo danh sách chứa các kênh màu theo thứ tự chuyển --> Trộn kênh màu một cách ngẫu nhiên --> Áp dụng thứ tự mới vào ảnh đầu vào, đổi vị trí các kênh màu RGB.  
+
 
 - Chuyển ảnh sang không gian màu HSV và tách riêng kênh Hue, Saturation, Value để  lưu  thành  ba  ảnh  grayscale  tương  ứng  (a_hue.jpg, a_saturation.jpg, a_value.jpg).  
 
