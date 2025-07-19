@@ -35,6 +35,16 @@ h_img: ảnh thể hiện màu chủ đạo.
 s_img: ảnh thể hiện độ bão hòa màu.  
 v_img: ảnh thể hiện độ sáng.  
 
+## Câu 2:  
+<img width="786" height="728" alt="image" src="https://github.com/user-attachments/assets/63fd222c-1071-4483-8988-3a9ae6adda12" />  
+
+<img width="776" height="103" alt="image" src="https://github.com/user-attachments/assets/d29367cf-718a-4e87-a264-b377b91bb3f6" />  
+
+
+
+
+
+
 
 
 
