@@ -94,6 +94,28 @@ Dùng nd.gaussian_filter để làm mịn ảnh bằng Gaussian Blur. Sigma = (1
 Cho người dùng nhập vào giá trị alpha và beta (0.5 <= alpha <= 2.0 và -50 <= beta <= 50).  
 Sau đó áp dụng công thức biến đổi tuyến tính được sử dụng để điều chỉnh độ sáng và tương phản của ảnh (lưu ý giới hạn giá trị trong khoảng [0, 255] hợp với ảnh 8-bit).  
 
+## Hướng dẫn  
+### 1. Cài đặt môi trường  
+Cài python, sau đó cài các thư viện:  
+Dùng tổ hợp phím: Windows + R + cmd.  
+- pip install imageio.  
+- pip install matplotlib.  
+- pip install scipy.
+- pip install imageio scipy scikit-image
+
+### 2. Chạy notebook  
+- Mở Jupyter Notebook trên VSCode.  
+- Code từng bài và chạy để xem kết quả.  
+- Nếu xảy ra lỗi như code sai, không có ảnh, chưa tải thư viện -> Không hiển thị kết quả.
+
+### 3. Tùy chỉnh tham số  
+Có thể tùy chỉnh tham số của các giá trị như góc xoay ảnh, độ phóng to, ...  
+
+## Tài liệu tham khảo  
+- Bài giảng Nhập môn Xử lý ảnh số - Van Lang University.  
+- Sách Digital Image Processing – Gonzalez & Woods.  
+
+
 
 
 
