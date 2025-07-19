@@ -92,7 +92,9 @@ Dùng nd.gaussian_filter để làm mịn ảnh bằng Gaussian Blur. Sigma = (1
 <img width="480" height="148" alt="image" src="https://github.com/user-attachments/assets/9d3ab16c-19e1-4fbe-b3df-acd0ffc5c1c1" />  
 
 Cho người dùng nhập vào giá trị alpha và beta (0.5 <= alpha <= 2.0 và -50 <= beta <= 50).  
-Sau đó áp dụng công thức biến đổi tuyến tính được sử dụng để điều chỉnh độ sáng và tương phản của ảnh.
+Sau đó áp dụng công thức biến đổi tuyến tính được sử dụng để điều chỉnh độ sáng và tương phản của ảnh (lưu ý giới hạn giá trị trong khoảng [0, 255] hợp với ảnh 8-bit).  
+
+
 
 
 
