@@ -86,7 +86,15 @@ Dùng nd.fliplr để lật ảnh sang ngang (flip left right).
 Dùng nd.zoom để phóng to ảnh lên 5 lần ở chiều rộng và chiều cao, kênh màu giữ nguyên.  
 Dùng nd.gaussian_filter để làm mịn ảnh bằng Gaussian Blur. Sigma = (1.1, 1.1, 0) là độ lệch chuẩn của Gaussian theo chiều rộng và chiều cao, không làm biến đổi kênh màu.  
 
-- 
+- Ứng dụng công thức bên dưới cho ảnh pagoda.jpg
+<img width="620" height="432" alt="image" src="https://github.com/user-attachments/assets/9fe11cc0-0306-4f69-93ed-1877227cbcf6" />
+
+<img width="480" height="148" alt="image" src="https://github.com/user-attachments/assets/9d3ab16c-19e1-4fbe-b3df-acd0ffc5c1c1" />  
+
+Cho người dùng nhập vào giá trị alpha và beta (0.5 <= alpha <= 2.0 và -50 <= beta <= 50).  
+Sau đó áp dụng công thức biến đổi tuyến tính được sử dụng để điều chỉnh độ sáng và tương phản của ảnh.
+
+
 
 
 
