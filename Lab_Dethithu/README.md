@@ -40,6 +40,42 @@ v_img: ảnh thể hiện độ sáng.
 
 <img width="776" height="103" alt="image" src="https://github.com/user-attachments/assets/d29367cf-718a-4e87-a264-b377b91bb3f6" />  
 
+Trong bài này, khi người dùng ấn phím I, G, L, H, C, A thì chương trình sẽ thực hiện hàm tương ứng cho các hình  image1.jpg, image2.jpg, và 
+image3.jpg. Lưu và hiển thị các ảnh đã biến đổi, ta làm như sau:  
+<img width="441" height="42" alt="image" src="https://github.com/user-attachments/assets/0ddec666-85ba-4b1c-a6f4-5e281324adad" />  
+
+Khai báo thư mục và tạo folder chứa ảnh sau biến đổi.  
+<img width="599" height="397" alt="image" src="https://github.com/user-attachments/assets/33f35ee2-5a41-4ed2-af07-fed5828f475e" />  
+
+Đây là các hàm biến đổi ảnh:  
+- image_inverse giúp biến đổi cường độ ảnh, tức sáng thành tối và ngược lại.  
+- gamma_correction làm tăng chất lượng của ảnh tùy thuộc vào giá trị gamma.
+- log_transformation giúp làm sáng những vùng tối.
+- histogram_equalization cải thiện độ tương phản hai vùng sáng tối của ảnh.
+- contrast_stretch cải thiện độ tương phản tổng thể của ảnh.
+- adaptive_histogram_equalization làm tăng độ rõ nét và chi tiết ở các vùng tối hoặc vùng sáng quá mức trong ảnh.
+
+<img width="410" height="151" alt="image" src="https://github.com/user-attachments/assets/167a6f04-eb95-420b-aca3-1f7b30efaff4" />  
+
+Sau biến đổi, ảnh được lưu vào thư mục output.  
+
+<img width="470" height="152" alt="image" src="https://github.com/user-attachments/assets/5d7f13ea-ea8d-4bb5-97b7-d3d66209a8f6" />  
+
+Cho người dùng nhập vào lựa chọn họ muốn biến đổi ảnh.  
+
+<img width="606" height="561" alt="image" src="https://github.com/user-attachments/assets/174d8264-5e10-4d04-8e51-12748af974b0" />  
+
+Sau khi chọn xong, ảnh sẽ được biến đổi và hiển thị ra màn hình.  
+
+
+
+
+
+
+
+
+
+
 
 
 
