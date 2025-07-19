@@ -27,5 +27,14 @@ Dùng phương pháp Canny để xác dịnh biên, sigma = 3 là tham số xác
 Gán số thứ tự cho từng kênh màu trong ảnh RGB --> Tạo danh sách chứa các kênh màu theo thứ tự chuyển --> Trộn kênh màu một cách ngẫu nhiên --> Áp dụng thứ tự mới vào ảnh đầu vào, đổi vị trí các kênh màu RGB.  
 
 
-- Chuyển ảnh sang không gian màu HSV và tách riêng kênh Hue, Saturation, Value để  lưu  thành  ba  ảnh  grayscale  tương  ứng  (a_hue.jpg, a_saturation.jpg, a_value.jpg).  
+- Chuyển ảnh sang không gian màu HSV và tách riêng kênh Hue, Saturation, Value để  lưu  thành  ba  ảnh  grayscale  tương  ứng  (a_hue.jpg, a_saturation.jpg, a_value.jpg).
+<img width="579" height="147" alt="image" src="https://github.com/user-attachments/assets/8bbe7615-3848-44a9-a517-cf568f500b82" />
+
+h_img: giữ nguyên Hue, còn Saturation và Value đặt là 1, giúp cho rõ kênh Hue. Tương tự với Saturation và Value.  
+h_img: ảnh thể hiện màu chủ đạo.  
+s_img: ảnh thể hiện độ bão hòa màu.  
+v_img: ảnh thể hiện độ sáng.  
+
+
+
 
