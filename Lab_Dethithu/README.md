@@ -67,6 +67,34 @@ Cho người dùng nhập vào lựa chọn họ muốn biến đổi ảnh.
 
 Sau khi chọn xong, ảnh sẽ được biến đổi và hiển thị ra màn hình.  
 
+## Câu 3:  
+Viết một chương trình Python sử dụng OpenCV để xử lý ba ảnh: colorful-ripe-tropical-fruits.jpg,  quang-ninh.jpg,  và  pagoda.jpg  với  các  phương  pháp biến đổi và tiền xử lý nâng cao.  
+- Tăng kích thước ảnh colorful-ripe-tropical-fruits.jpg thêm 30 pixel ở cả chiều rộng và chiều cao.
+<img width="498" height="57" alt="image" src="https://github.com/user-attachments/assets/650e026f-39e5-4f3a-82a4-5c096c53364b" />
+
+Đoạn code trên tăng chiều rộng 15px trái và 15px phải; tăng chiều cao 15px trên và 15px dưới. Kênh màu vẫn giữ nguyên.  
+
+- Xoay ảnh quang-ninh.jpg 45 độ theo chiều kim đồng hồ và lật ngang
+<img width="259" height="131" alt="image" src="https://github.com/user-attachments/assets/58265e8a-dd54-4627-b942-6c5b4f5f6ca5" />
+
+Dùng nd.rotate để xoay ảnh sang 45 độ.  
+Dùng nd.fliplr để lật ảnh sang ngang (flip left right).  
+
+- Tăng kích thước ảnh pagoda.jpg lên 5 lần và áp dụng Gaussian blur với kernel 7x7 để làm mịn.
+<img width="416" height="166" alt="image" src="https://github.com/user-attachments/assets/6902028b-fb04-4412-9e30-3e37fd18944d" />
+
+Dùng nd.zoom để phóng to ảnh lên 5 lần ở chiều rộng và chiều cao, kênh màu giữ nguyên.  
+Dùng nd.gaussian_filter để làm mịn ảnh bằng Gaussian Blur. Sigma = (1.1, 1.1, 0) là độ lệch chuẩn của Gaussian theo chiều rộng và chiều cao, không làm biến đổi kênh màu.  
+
+- 
+
+
+
+
+
+
+
+
 
 
 
